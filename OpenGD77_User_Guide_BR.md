@@ -7,7 +7,6 @@
 
 Para as últimas informações e discussões, por favor se dirija ao forum de desenvolvimento e comunidade (em Inglês) em <https://opengd77.com>
 
-
 # O firmware NÃO É compatível com a nova versão 2022 do Baofeng DM-1801, ou o novo DM-1801A #
 
 <!-- TOC titleSize:2 tabSpaces:2 depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 skip:0 title:1 charForUnorderedList:* -->
