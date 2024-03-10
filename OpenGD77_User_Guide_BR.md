@@ -347,11 +347,11 @@ A instalação do firmware é realizada por conta e risco do proprietário, mas 
 *Notas:*
 
 - *O firmware não é compatível com a nova versão 2022 do Baofeng DM-1801 ou DM-1801A, que agora usa hardware interno e eletrônica completamente diferentes.*
-- O software oficial Radioddity CPS PC não é compatível com o firmware, e o **OpenGD77 CPS** deve ser usado no lugar. Ele pode ser baixado do link mostrado na [seção 1.1](#download-links-and-other-resources) desse guia. This CPS must also be used for the Baofeng , TYT, Retevis and all other supported radios
+- O software oficial Radioddity CPS PC não é compatível com o firmware, e o **OpenGD77 CPS** deve ser usado no lugar. Ele pode ser baixado do link mostrado na [seção 1.1](#download-links-and-other-resources) desse guia. Esse CPS tabém deve ser usado para o Baofeng, TYT, Retevis e todos os outros rádios suportados.
 
-### Transferring data to Radio
+### Transferindo dados para o Rádio
 
-The CPS must be used to install the firmware and also to read and write the codeplug, and write the satellite data, voice prompts and DMR ID database.
+O CPS deve ser usado para instalar o firmware e também para ler e gravar o codeplug, gravar os dados de satélite, prompts de voz, e o banco de dados DMR ID.
 
 1. Firmware upgrade.
   * Get the radio into firmware update mode by:
