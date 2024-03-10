@@ -317,7 +317,7 @@ Assim, basicamente se seu rádio não receber ou transmitir, tente uma versão d
 <https://www.opengd77.com/downloads/PC_CPS_20230910/Latest>
 
 
-- **Código Fonte mais recente para o firmware totalmente lançado:**
+- **Código Fonte mais recente para o firmware lançado integralmente:**
 <https://www.opengd77.com/downloads/releases>
 
 
@@ -327,27 +327,27 @@ Assim, basicamente se seu rádio não receber ou transmitir, tente uma versão d
 
 <div style="page-break-after: always; break-after: page;"></div>
 
-## Installation
+## Instalação
 
-The firmware can be installed onto the following radios
+O firmware pode ser instalado nos seguintes rádios
 
-- Radioddity GD-77 (also known as TYT MD-760)
+- Radioddity GD-77 (também conhecido como TYT MD-760)
 - Radioddity GD-77S
-- Baofeng DM-1801 - VERSION 1 HARDWARE ONLY (also known as Baofeng DM-860)
-- Baofeng DM-1801A - VERSION 1 HARDWARE ONLY
-- Baofeng RD-5R (also known as Baofeng DM-5R Tier 2)
+- Baofeng DM-1801 - SOMENTE HARDWARE VERSÃO 1  (também conhecido como Baofeng DM-860)
+- Baofeng DM-1801A - SOMENTE HARDWARE VERSÃO 1
+- Baofeng RD-5R (também conhecido como Baofeng DM-5R Tier 2)
 - TYT MD-9600 | Retevis RT-90
 - TYT MD-UV380 | Retevis RT-3S | Baofeng DM-1701 | Retevis RT-84
 
 
-The firmware must be installed using the 'Extras/Firmware Loader' menu in the OpenGD77 CPS. The original Manufacturers' firmware loader cannot be used to load the OpenGD77 firmware.
+O firmware deve ser instalado usando o menu 'Extras/Firmware Loader' no OpenGD77 CPS. O carregador original de firmware do fabricante não pode ser usado para carregar o firmware OpenGD77.
 
-Installation of the firmware is undertaken at the owner's own risk, but the official firmware can usually be reloaded onto the radio if the user has problems with the firmware, **as long as the operator takes a full backup of their radio using the OpenGD77 CPS immediately after the firmware has been installed** (see [*backup section*](#backup-before-you-do-anything-else))
+A instalação do firmware é realizada por conta e risco do proprietário, mas o firmware oficial geralmente pode ser recarregado de volta no rádio se o usuário tiver problemas com o firmware, **desde que o operador faça um backup completo do seu rádio usando o OpenGD77 CPS imediatamente após o firmware tiver sido instalado** (veja [*seção backup*](#backup-before-you-do-anything-else))
 
-*Notes:*
+*Notas:*
 
-- *The firmware is not compatible with the new 2022 version of the Baofeng DM-1801 or DM-1801A which now uses completely different internal hardware and electronics*
-- The official Radioddity CPS PC software is not compatible with the firmware, and the **OpenGD77 CPS** must be used instead. This can be downloaded from the link shown in [section 1.1](#download-links-and-other-resources) of this guide. This CPS must also be used for the Baofeng , TYT, Retevis and all other supported radios
+- *O firmware não é compatível com a nova versão 2022 do Baofeng DM-1801 ou DM-1801A, que agora usa hardware interno e eletrônica completamente diferentes.*
+- O software oficial Radioddity CPS PC não é compatível com o firmware, e o **OpenGD77 CPS** deve ser usado no lugar. Ele pode ser baixado do link mostrado na [seção 1.1](#download-links-and-other-resources) desse guia. This CPS must also be used for the Baofeng , TYT, Retevis and all other supported radios
 
 ### Transferring data to Radio
 
