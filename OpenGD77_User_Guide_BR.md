@@ -5,8 +5,7 @@
 
 ## Para OpenGD77 / OpenGD77S / OpenDM1801* / OpenDM1801A* / OpenRD5R / MD-9600 (RT-90) / MD-UV380 (RT-3S) / MD-UV390 / DM-1701 / RT-84
 
-Para as últimas informações e discussões, por favor se refira ao forum de desenvolvimento e comunidade (em Inglês) em <https://opengd77.com>
-
+Para as últimas informações e discussões, por favor se dirija ao forum de desenvolvimento e comunidade (em Inglês) em <https://opengd77.com>
 
 # O firmware NÃO É compatível com a nova versão 2022 do Baofeng DM-1801, ou o novo DM-1801A #
 
