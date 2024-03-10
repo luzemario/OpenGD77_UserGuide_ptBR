@@ -1,20 +1,20 @@
 ![](media/OpenGD77-logo.png)
 
 
-# OpenGD77 User Guide
+# Guia do Usuário do OpenGD77
 
-## For OpenGD77 / OpenGD77S / OpenDM1801* / OpenDM1801A* / OpenRD5R / MD-9600 (RT-90) / MD-UV380 (RT-3S) / MD-UV390 / DM-1701 / RT-84
+## Para OpenGD77 / OpenGD77S / OpenDM1801* / OpenDM1801A* / OpenRD5R / MD-9600 (RT-90) / MD-UV380 (RT-3S) / MD-UV390 / DM-1701 / RT-84
 
-For the latest information and discussions, please refer to the development and community forum at <https://opengd77.com>
+Para as últimas informações e discussões, por favor se refira ao forum de desenvolvimento e comunidade (em Inglês) em <https://opengd77.com>
 
 
-# The firmware is also NOT compatible with the new 2022 version of the Baofeng DM-1801, or the new DM-1801A #
+# O firmware NÃO É compatível com a nova versão 2022 do Baofeng DM-1801, ou o novo DM-1801A #
 
 <!-- TOC titleSize:2 tabSpaces:2 depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 skip:0 title:1 charForUnorderedList:* -->
 
-## Table of Contents
-* [OpenGD77 / OpenGD77S / OpenDM1801* / OpenDM1801A* / OpenRD5R / MD-9600 (RT-90) / MD-UV380 (RT-3S) / DM-1701 / RT-84 User Guide](#for-opengd77--opengd77s--opendm1801--opendm1801a--openrd5r--md-9600-rt-90--md-uv380-rt-3s--md-uv390--dm-1701--rt-84)
-  * [Introduction](#introduction)
+## Índice
+* [Guia do Usuário do OpenGD77 / OpenGD77S / OpenDM1801* / OpenDM1801A* / OpenRD5R / MD-9600 (RT-90) / MD-UV380 (RT-3S) / DM-1701 / RT-84](#for-opengd77--opengd77s--opendm1801--opendm1801a--openrd5r--md-9600-rt-90--md-uv380-rt-3s--md-uv390--dm-1701--rt-84)
+  * [Introdução](#introduction)
     * [Download links and other resources](#download-links-and-other-resources)
   * [Installation](#installation)
   * [Transferring data to Radio](#transferring-data-to-radio)
