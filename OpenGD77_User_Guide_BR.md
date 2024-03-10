@@ -249,47 +249,47 @@ Para as últimas informações e discussões, por favor se dirija ao forum de de
 
 ![](media/OpenGD77-logo.png)
 
-## Introduction
+## Introdução
 
-This user guide is a work in progress as is the firmware.
+Esse guia do usuário é um trabalho em andamento, assim como o firmware.
 
-The photos will be updated when the firmware in a particular area stabilises.
+As fotos serão atualizadas quando o firmware em uma área particular estabilizar.
 
-The intention of the project is to create a fully featured non-commercial firmware that entirely replaces the factory firmware.
-This firmware is specifically designed for **Amateur Radio** use, and has features not available in the official firmware.
+A intenção do projeto é criar um firmware não comercial cheio de recursos que substitua o firmware de fábrica por completo.
+Esse firmware foi projetado especificamente para uso **Radioamador**, e tem recursos indisponíveis no firmware oficial.
 
-*Notes:*
+*Notas:*
 
-- **The firmware is still under development and there are some key areas of functionality which are supported in the official firmware but not in this firmware**
-- SMS message Tx and Rx **are not currently supported**, but may be supported in the future.
-- Scan Lists **are not supported** because Channel or Zone scan feature provides almost identical functionality.
-- Privacy and Encryption **will never** be supported, as it's illegal for Amateur Radio use, developers in some countries (*e.g.* Australia) are now legally required to put a back door access into any encryption systems at the request of the government, hence effectively making it illegal or impossible to develop systems that contain encryption.
+- **O firmware ainda está em desenvolvimento e há algumas áreas chave de funcionalidade que são suportadas no firmware oficial mas não neste firmware**
+- Tx e Rx de mensagens SMS **não são atualmente suportados**, mas podem ser suportados no futuro.
+- Listas de varredura  **não são suportados** porque o recurso de varredura de canal ou zona provê quase a mesma funcionalidade.
+- Privacidade e Encriptação **nunca serão** suportados, devido a serem ilegais para uso no radioamador, e desenvolvedores em alguns países (*por ex.* Austrália) são obrigados legalmente a colocar acesso via porta dos fundos em sistemas de encriptação mediante solicitação do governo, assim efetivamente tornando ilegal ou impossível desenvolver sistemas que contenham encriptação.
 
 
 <div style="page-break-after: always; break-after: page;"></div>
 
-### Download links and other resources
+### Links de Download e outros recursos
 
-For software licensing reasons the OpenGD77 firmware needs to include parts of the original manufacturer's firmware to provide support for AMBE voice encoding and decoding.
-Depending on your radio type you will need to download and extract one of the following two 'Donor' files, store it on your computer and make a note of its location.
+Por razões de licencamento de software, o firmware OpenGD77 precisa incluir partes do firmware original do fabricante, para fornecer suporte para codificação e decodificação da voz AMBE.
+Dependendo do tipo do seu rádio, você vai precisar fazer download e extrair um dos dois seguintes aquivos 'doadores', armazená-los em seu computador e anotar sua localização.
 
-**Donor File for GD-77 | GD-77S | DM-1801 | DM-1801A | RD-5R**
+**Arquivo Doador para GD-77 | GD-77S | DM-1801 | DM-1801A | RD-5R**
 
 <https://radioddity.s3.amazonaws.com/2021-01-26%20GD-77%20CPS%20%26%20Firmware%20Changelog%20-%20Ham%20Version.zip>
 
-Unzip the donor firmware zip file, extract the 'GD-77_V4.3.6.sgl' file from the "Firmware software V4.3.6" folder and save it to your computer.
+Descompacte o arquivo zip do firmware doador, extraia o arquivo 'GD-77_V4.3.6.sgl' da pasta "Firmware software V4.3.6" e salve no seu computador.
 
-Note, this file is the same for all of the radio types above.
+Note, esse arquivo é o mesmo para todos os tipos de rádio acima.
 
-**Donor File for TYT MD-9600 | Retevis RT-90 | TYT MD-UV380 | Retevis RT-3S | Baofeng DM-1701 | Retevis RT-84**
+**Arquivo Doador para TYT MD-9600 | Retevis RT-90 | TYT MD-UV380 | Retevis RT-3S | Baofeng DM-1701 | Retevis RT-84**
 
 <https://www.passion-radio.com/index.php?controller=attachment&id_attachment=760>
 
-Unzip the donor firmware zip file, extract the donor file 'MD9600-CSV(2571V5)-V26.45.bin' and save it to your computer.
+Descompacte o arquivo zip do firmware doador, extraia o arquivo 'MD9600-CSV(2571V5)-V26.45.bin' e salve no seu computador.
 
-Note, this file is the same for all of the radio types above.
+Note, esse arquivo é o mesmo para todos os tipos de rádio acima.
 
-**Firmware binaries:**
+**Binários do Firmware:**
 
 **GD-77 | GD-77S | DM-1801 | DM-1801A | RD-5R**
 <https://www.opengd77.com/downloads/GD77/Firmware/Latest>
@@ -297,31 +297,31 @@ Note, this file is the same for all of the radio types above.
 **TYT MD-9600 | Retevis RT-90**
 <https://www.opengd77.com/downloads/MD9600/Firmware/Latest>
 
-The MD-9600 | RT-90 has been produced with multiple different PLL and IF chips during its production run.
-You need to install the version which matches your hardware version
-The version is written on the PCB inside the top of the radio, except sometimes TYT changed the hardware without changing the version on the PCB.
-For radios with hardware version 4A use Version 5 firmware
-For very old radios with hardware version 2 written on the PCB, may need to be loaded with Version 1 firmware.
+O MD-9600 | RT-90 foi produzido com múltiplos PLLs e chips de IF diferentes durante a linha de produção.
+Você precisa instalar a versão que combina com sua versão de hardware.
+A versão está escrita na placa de circuito impresso dentro do topo do rádio, mas algumas vezes a TYT mudou o hardware sem mudar a versão na placa.
+Para rádios com versão de hardware 4A use o firmware Versão 5.
+Para rádios muito antigos com versão de hardware 2 escrito na placa, pode ser necessário carregar o firmware versão 1.
 
-No harm will be done if you load the wrong firmware version. However the radio will not receive or transmit.
-So basically if your radio does not receive or transmit, try a different firmware hardware version.
+Nenhum dano irá ocorrer se você carregar a versão de firmware errada. Contudo, o rádio não irá receber ou transmitir.
+Assim, basicamente se seu rádio não receber ou transmitir, tente uma versão de firmware para um hardware diferente.
 
 **TYT MD-UV380 | Retevis RT-3S | Baofeng DM-1701 | Retevis RT-84**
 <https://www.opengd77.com/downloads/MDUV380_DM1701/Firmware/Latest/>
 
-*Note*:
+*Nota*:
 
-- Versions with JA in the name are localised for Japanese users and only support Japanese and English languages
+- Versões com JA no nome são traduzidas para usuários japoneses e somente suportam idiomas Inglês e Japonês.
 
 - **OpenGD77 CPS**
 <https://www.opengd77.com/downloads/PC_CPS_20230910/Latest>
 
 
-- **Latest Source code for fully released firmware:**
+- **Código Fonte mais recente para o firmware totalmente lançado:**
 <https://www.opengd77.com/downloads/releases>
 
 
-- **OpenGD77 Forum:**
+- **Forum do OpenGD77:**
 <https://www.opengd77.com/>
 
 
