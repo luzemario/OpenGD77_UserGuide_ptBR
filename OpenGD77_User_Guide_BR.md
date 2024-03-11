@@ -22,7 +22,7 @@ Para as últimas informações e discussões, por favor se dirija ao forum de de
   * [Telas principais (modos VFO e Canal)](#main-screens-vfo-and-channel-modes)
     * [Mudando entre o modo FM e o modo DMR](#changing-between-fm-mode-and-dmr-mode)
     * [Mudando o Timeslot no modo DMR](#changing-timeslot-in-dmr-mode)
-    * [Ajuste automático de Grupos de Conversa/Chamada Privada e Timeslot no modo DMR](#automatic-setting-of-talkgroupprivatecall-and-timeslot-in-dmr-mode)
+    * [Ajuste automático de Grupos de Conversa (TalkGroup)/Chamada Privada (PrivateCall) e Timeslot no modo DMR](#automatic-setting-of-talkgroupprivatecall-and-timeslot-in-dmr-mode)
     * [Mudando a largura de banda no modo FM](#changing-bandwidth-in-fm-mode)
     * [Controlando a potência de transmissão](#controlling-tx-power)
     * [Gráfico de barra indicador de sinal](#signal-strength-bar-graph)
@@ -507,20 +507,20 @@ Quando no modo DMR, se o filtro DMR estiver desligado, é possível ajustar auto
 
 - Se o filtro de Timeslot estiver desligado, também será substituído.
 
-Para apagar os overrides, veja as seções [Mudando o Timeslot no modo DMR](#changing-timeslot-in-dmr-mode) e [Entrada Manual do número de TalkGroup](#manual-talkgroup-number-entry).
+Para apagar as substituições (overrides), veja as seções [Mudando o Timeslot no modo DMR](#changing-timeslot-in-dmr-mode) e [Entrada Manual do número de TalkGroup](#manual-talkgroup-number-entry).
 
 ### Mudando a largura de banda no modo FM
 
 - No modo FM, pressionar a tecla **Estrela** alterna entre largura de banda do canal entre 25kHz e 12.5kHz.
 
-### Controlling Tx power
+### Controlando a potência de transmissão (Tx power)
 
-The firmware has two main ways to control the output power:
+O firmware tem duas formas principais de controlar a potência de saída:
 
-1. The **Master** power control, which controls the power to both VFOs, and also all channels.
-2. **Channel** specific power.
+1. O controle de potência **Mestre** (Master), que controla a potência de ambos os VFOs, e também todos os canais.
+2. Potência específica do **Canal**.
 
-By default, all Channels are set to use the **Master** power, however this setting can be changed in the CPS (and also in the **Channel Details** screen), so that individual channels have their own custom power setting.
+Por padrão, todos os Canais  are set to use the **Master** power, however this setting can be changed in the CPS (and also in the **Channel Details** screen), so that individual channels have their own custom power setting.
 
 When a Channel has a custom power setting, the power will be displayed in a **Bold font**.
 
