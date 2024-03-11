@@ -414,38 +414,38 @@ O CPS deve ser usado para instalar o firmware e também para ler e gravar o code
 
 <div style="page-break-after: always; break-after: page;"></div>
 
-## Codeplug compatibility
+## Compatibilidade de Codeplug
 
-The official firmware for each of these radios use slightly different codeplug formats.
+O firmware oficial de cada um desses rádios usa formatos de codeplug ligeiramente diferentes.
 
-To make the best use of the features of OpenGD77 we recommend that you write a new codeplug for the radio using the OpenGD77 CPS.
+Para o melhor uso dos recursos do OpenGD77, recomendamos que você grave um novo codeplug para o rádio usando o OpenGD77 CPS.
 
-The OpenGD77 CPS also has the ability to import an existing codeplug from .CSV files.
+O OpenGD77 CPS também é capaz de importar um codeplug existente de arquivos .CSV.
 
-The codeplug can only be uploaded to the firmware using the [OpenGD77CPS](#cps-software).
+O codeplug só pode ser carregado para o firmware usando o [OpenGD77CPS](#cps-software).
 
-It's also recommended that you structure your codeplug to remove any duplicate channels which are the same frequency but use different TalkGroup. See the section about [*Programming Channels and Talkgroups for use with the firmware*](#overview) at the end of this User Guide.
+Também é recomendado que você estruture seu codeplug para remover canais duplicados que são na mesma frequência, mas usam Grupos de Conversa (TG) diferentes. Veja a seção [*Programando Canais e Grupos de Conversa para uso com o firmware*](#overview) no final deste guia do usuário.
 
 <div style="page-break-after: always; break-after: page;"></div>
 
-## Variations between different supported radios
+## Variações entre diferentes rádios suportados
 
-Not all the supported radios have the same number of buttons, or the same screen size, hence there are some differences when operating radios other than the Radioddity GD-77.
+Nem todos os rádios suportados tem o mesmo número de botões ou mesmo tamanho de tela, assim há algumas diferenças quando for operar rádios diferentes do Radioddity GD-77.
 
-Also, not all radios support all the functionalities.
+Além disso, nem todos os rádios suportam todas as funcionalidades.
 
-- The Radioddity GD-77 (aka *TYT MD-760*), has 2 buttons below the PTT. The **black** button is technically known as **SK1**, and the **blue** button is known as **SK2** and is also referred to, in this manual, as the **Function** button. This radio also has an **Orange** button at the top.
-- The Baofeng RD-5R | DM-5R USB hardware will not support USB connections while the radio is transmitting, so **it is not possible** to use Hotspot mode on this radio.
-- The Baofeng RD-5R | DM-5R does not have Left or Right arrow buttons, so the **A/B** button is used to replace the Left arrow and the **Band** button is used to replace the Right arrow.
-- The Baofeng RD-5R | DM-5R does not have the **Orange** button, and its functionality has been simulated by using a **Long press** on the orange coloured **MR/VFO** button.
-- The Baofeng RD-5R | DM-5R has 2 buttons on the side, but their position is different from the GD-77 and DM-1801. The button above the PTT is used as the **Black** button on the side of the GD-77, also known as button **SK1**. The button below the PTT is used as the **Function** button, also known as **SK2**.
-- The Radioddity GD-77S does not have a keypad or screen, hence its operation is completely different from the other supported radios that have a screen (*see the appendix on [GD-77S operation](#gd-77s-operation)*).
-- The Baofeng DM-1801 | DM-860 has a dedicated **MR/VFO** button, which is used to change between Channel and VFO mode, in place of pressing the **Red** menu key.
-- The Baofeng DM-1801 | DM-860 has a dedicated **A/B** button, which is used to change between VFO A and B, in place of pressing the quick menu via the **Orange** button on the top of the radio.
-- The TYT MD-UV380 | Retevis RT-3S does not have Right and Left arrow buttons, but has a rotary control on top of the radio. On the VFO and Channel screens, the **Up** and **Down** buttons function like the Right and Left button on the GD-77. The rotary control operates functions like the **Up** and **Down** buttons on the GD-77 and can be used to change channel or VFO frequency.
-- The Baofeng DM-1701 | Retevis RT-84 does not have the Right and Left array buttons, P1 is used as Left button, P2 is used as Right button. The **Orange** button is located above the PTT.
-In menu screens the **Up** and **Down** buttons move up and down and the rotary control is used to control the value of each setting, in the same way that the Left and Right buttons do on the GD-77
-- The TYT MD-9600 | Retevis RT-90 is a mobile radio with buttons on the front panel and the microphone. See the section about the MD-9600 for information about key and button mappings.
+- O Radioddity GD-77 (também conhecido como *TYT MD-760*), tem dois botões abaixo do PTT. O botão **Preto** é tecnicamente conhcido como **SK1**, e o botão **azul** é conhecido como **SK2**. Esse botão tambem é referenciado aqui nesse manual como o botão **Função**. Esse rádio também tem um botão **Laranja** no topo.
+- O hardware USB do Baofeng RD-5R | DM-5R não suporta conexão USB enquanto o rádio está transmitindo, assim **não é possível** usar o modo Hotspot nesse rádio.
+- O Baofeng RD-5R | DM-5R não tem os botões das setas direita ou esquerda, assim o botão **A/B** é usado para substituir a seta esquerda e o botão **Band** é usado para substituir a seta direita.
+- O Baofeng RD-5R | DM-5R não tem o botão **Laranja**, e essa funcionalidade é simulada usando um **pressionamento longo** no botão colorido laranja **MR/VFO**.
+- O Baofeng RD-5R | DM-5R tem 2 botões do lado, mas sua posição é diferente do GD-77 e DM-1801. O botão acima do PTT é usado como o botão **Preto** do lado do GD-77, também conhecido como botão **SK1**. O botão abaixo do PTT é usado como o botão **Função**, também conhecido como **SK2**.
+- O Radioddity GD-77S não tem um teclado ou tela, assim sua operação é completamente diferente dos outros rádios suportados que tem uma tela (*veja o apêndice [GD-77S operation](#gd-77s-operation)*).
+- O Baofeng DM-1801 | DM-860 tem um botão dedicado **MR/VFO**, que é usado para mudar entre o modo canal e VFO, ao invés de pressionar a tecla de menu **Vermelha**.
+- O Baofeng DM-1801 | DM-860 tem um botão dedicado **A/B**,que é usado para mudar entre VFO A e B, ao invés de pressionar o menu rápido via botão **Laranja** no topo do rádio.
+- O TYT MD-UV380 | Retevis RT-3S não tem botões de seta esquerda e direita, mas tem um controle rotativo no topo do rádio. Nas telas VFO e Canal, os botões **Up** e **Down** funcionam igual aos botões Esquerda e Direita no GD-77. O controle rotativo opera funções igual aos botões **Up** e **Down** do GD-77 e pode ser usado para mudar canal ou frequência do VFO.
+- O Baofeng DM-1701 | Retevis RT-84 não tem os botões Esquerda e Direita. P1 é usado como Esquerda, P2 é usado como Direita. O botão **Laranja** é localizado acima do PTT.
+Nas telas de menu os botões **Up** e **Down** se movem para cima e para baixo e o controle rotativo é usado para mudar o valor de cada opção, da mesma forma que os botões Esquerda e Direita fazem no GD-77.
+- O TYT MD-9600 | Retevis RT-90 é um radio móvel com botões no painel frontal e no microfone. Veja a seção sobre o MD-9600 para informação sobre teclas e mapeamento de botões.
 
 
 <div style="page-break-after: always; break-after: page;"></div>
