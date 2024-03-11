@@ -353,63 +353,63 @@ A instalação do firmware é realizada por conta e risco do proprietário, mas 
 
 O CPS deve ser usado para instalar o firmware e também para ler e gravar o codeplug, gravar os dados de satélite, prompts de voz, e o banco de dados DMR ID.
 
-1. Firmware upgrade.
-  * Get the radio into firmware update mode by:
+1. Atualização do Firmware.
+  * Ponha o rádio no modo de atualização de firmware usando:
   
-    * Holding down the two buttons indicated below (**S1**,**Fn**) and turn the radio on.
+    * Segure os dois botões indicados abaixo (**S1**,**Fn**) e ligue o rádio.
 	
-      * Radioddity GD-77 or GD-77s or the TYT MD-760 or MD-730:
-        * Hold down the **two small buttons** next to the PTT button.
-      * Baofeng DM-1801 or DM-1801A or DM-860:
-        * Hold down the **two small buttons** under the PTT button.
+      * Radioddity GD-77 ou GD-77s ou TYT MD-760 ou MD-730:
+        * Segure os **dois botões menores** próximos ao botão PTT.
+      * Baofeng DM-1801 ou DM-1801A ou DM-860:
+        * segure os **dois botões menores** abaixo do botão PTT.
       * Baofeng RD-5R or DM-5R Tier2:
-        * The Orange **S1** (Call) and Black Fn (**Moni** or **S2**) buttons (either side of the PTT).
+        * Os botões laranja **S1** (Call) e preto Fn (**Moni** ou **S2**) (qualquer lado do PTT).
       * TYT MD-9600 | Retevis RT-90
-        * Hold buttons P1 and orange button, while applying 12V power to the radio. Note updating the OpenGD77 firmware to a newer version does not require the power to be removed and reconnected, just turn on the radio using the green / power button whilst holding P1 and orange will enter firmware update mode.
+        * Segure os botões P1 e botão laranja, enquanto aplica energia 12V ao rádio. Note que atualizar o firmware OpenGD77 para uma nova versão não requer que a energia seja removida e reconectada, apenas ligue o rádio usando o botão power/verde enquanto segura os botões P1 e laranja, e irá entrar no modo de atualização de firmware.
       * TYT MD-UV380 | Retevis RT-3S | Baofeng DM-1701 | Retevis RT-84
-        * Hold the top 2 buttons on the side of the radio (**S1** and PTT) and turn the radio on.
+        * Segure os dois botões no topo do lado do rádio (**S1** e PTT) e ligue o rádio.
 
 		
 ![buttons layout](media/PTT-layout.png)<!-- { width=420 } -->
 
-  * The LCD screen will be blank. Handheld radios the LED will be illuminated or flash.
+  * A tela LCD ficará apagada. Nos rádios de mão, o LED será iluminado ou piscará.
 
-  * For GD-77 | GD-77S | DM-1801 | DM-1801A and RD-5R no driver is required. 
-	For all other radios the STM DFUSe driver is required. If the driver is not automatically installed by Windows, you may need to use the Windows Device Manager to find and install the correct driver.
+  * Para o GD-77 | GD-77S | DM-1801 | DM-1801A e RD-5R nenhum driver é necessário. 
+	Para todos os outros rádios é necessáio o driver STM DFUSe. Se o driver não for instalado automaticamente pelo Windows, você poderá precisar usar o Gerenciador de Dispositivos do Windows para achar e instalar o driver correto.
   
-  * Select the radio type
+  * Selecione o tipo de rádio
   
   ![firmware loader select radio type](media/cps_radio_type_menu.png)
   
-  * The Firmware is easily installed from the Extras menu in the [CPS](#cps-software).  
+  * O Firmware é instalado facilmente pelo menu Extras no [CPS](#cps-software).  
     ![firmware loader menu access](media/Firmware_loader-01.png)<!-- { width=400 } -->
 
-    - Choose your radio model.  
+    - Escolha o modelo do seu rádio.  
       ![firmware loader window for MK22](media/Firmware_loader-02.png)<!-- { width=420 } -->  
       ![firmware loader window for STM32](media/Firmware_loader-03.png)<!-- { width=420 } -->
 
-    - For Software licensing reasons the first time that you use the firmware loader you must click 'Select official firmware (donor) file' and then select the donor file you previously downloaded.
+    - Por razões de licenciamento de software, na primeira vez que você usar o carregador de firmware, deve clicar em 'Select official firmware (donor) file' e então selecionar o arquivo doador que você baixou previamente.
 
-      It is only necessary to do this once. If you do not do this then it is only possible to use the radio in FM mode.
+      Só é necessário fazer isso na primeira vez. Se você não fizer, só será possível utilizar o rádio no modo FM.
 
-      **Note!  Do not attempt to install the Manufacturer's official firmware to the radio, it is only needed by the CPS to add DMR functionality to the firmware.**
+      **Nota!  Não tente instalar o firmware oficial do fabricante no rádio, isso só é necessário para o CPS poder adicionar funcionalidade DMR ao firmware.**
 
-      Once you have successfully completed this procedure the Title bar of the Firmware Loader will display [+DMR]
+      Assim que você completar esse procedimento corretamente, a barra de título do carregador de firmware irá mostrar [+DMR].
 
-    - The firmware can optionally support an additional language. Select this in the 'Additional Language' dropdown menu if you need it.
-    - Click 'Select Open firmware file & Update' or 'Select a File and Update'
-    - Select a previously downloaded .zip firmware file. (The most recent file can be found at the download location given in [section 1.1](#download-links-and-other-resources))
-      The Selected Firmware file will be patched with data from the official firmware and then downloaded to the radio along with the additional language if selected.
-    - When the download is complete, if the radio does not automatically reboot, turn the power off and on again.
+    - O firmware pode opcionalmente suportar um idioma adicional. Selecione isso no menu descendente 'Additional Language' se precisar.
+    - Clique 'Select Open firmware file & Update' ou 'Select a File and Update'
+    - Selecione um arquivo de firmware .zip baixado previamente. (O arquivo mais recente pode ser encontrado no local de download dados na [seção 1.1](#download-links-and-other-resources))
+      O firmware selcionado será corrigido com dados do firmware oficial e então enviado ao rádio junto com o idioma adicional, se selecionado.
+    - Quando o download estiver completo, se o rádio não reiniciar automaticamente, desligue e ligue novamente.
 	
- **Note! The codeplug format used in all radios except the GD-77 is not supported by the firmware, so you will need to install an OpenGD77 format codeplug using the CPS before you can any functions of the radio, except the VFO - which can be changed manually**
+ **Nota! O formato de codeplug usado em todos os rádios exceto o GD-77 não é suportado pelo firmware. Assim, você precisará instalar um codeplug no formato OpenGD77 usando o CPS antes de poder usar qualquer função do rádio, exceto VFO - que pode ser mudado manualmente**
 
 
-2. Updating the codeplug using [OpenGD77 CPS](#cps-software).
-  - This mechanism uses serial communication while the radio is normally on with the LCD active.
-    * If you have been updating the firmware then turn the radio off and turn it on normally.
-    * It uses serial ports so the OpenGD77 driver must be installed. This happens as part of the installation of the CPS software.
-    * Specific Detail in [CPS section](#backup-before-you-do-anything-else)
+2. Atualizando o codeplug usando o [OpenGD77 CPS](#cps-software).
+  - Esse mecanismo usa comunicação serial enquanto o rádio está normalmente ligado com o LCD ativo.
+    * Se você estava atualizando o firmware, desligue e ligue o rádio para se certificar que saiu deste modo.
+    * Ele usa porta serial, assim o driver do OpenGD77 deve estar instlado. Isso ocorre como parte da instalação do  software CPS.
+    * Detalhes específicos na [seção CPS](#backup-before-you-do-anything-else)
 
 
 <div style="page-break-after: always; break-after: page;"></div>
