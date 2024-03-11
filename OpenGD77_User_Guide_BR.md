@@ -442,76 +442,76 @@ Além disso, nem todos os rádios suportam todas as funcionalidades.
 - O Radioddity GD-77S não tem um teclado ou tela, assim sua operação é completamente diferente dos outros rádios suportados que tem uma tela (*veja o apêndice [GD-77S operation](#gd-77s-operation)*).
 - O Baofeng DM-1801 | DM-860 tem um botão dedicado **MR/VFO**, que é usado para mudar entre o modo canal e VFO, ao invés de pressionar a tecla de menu **Vermelha**.
 - O Baofeng DM-1801 | DM-860 tem um botão dedicado **A/B**,que é usado para mudar entre VFO A e B, ao invés de pressionar o menu rápido via botão **Laranja** no topo do rádio.
-- O TYT MD-UV380 | Retevis RT-3S não tem botões de seta esquerda e direita, mas tem um controle rotativo no topo do rádio. Nas telas VFO e Canal, os botões **Up** e **Down** funcionam igual aos botões Esquerda e Direita no GD-77. O controle rotativo opera funções igual aos botões **Up** e **Down** do GD-77 e pode ser usado para mudar canal ou frequência do VFO.
+- O TYT MD-UV380 | Retevis RT-3S não tem botões de seta esquerda e direita, mas tem um controle rotativo no topo do rádio. Nas telas VFO e Canal, os botões **Acima** e **Abaixo** funcionam igual aos botões Esquerda e Direita no GD-77. O controle rotativo opera funções igual aos botões **Acima** e **Abaixo** do GD-77 e pode ser usado para mudar canal ou frequência do VFO.
 - O Baofeng DM-1701 | Retevis RT-84 não tem os botões Esquerda e Direita. P1 é usado como Esquerda, P2 é usado como Direita. O botão **Laranja** é localizado acima do PTT.
-Nas telas de menu os botões **Up** e **Down** se movem para cima e para baixo e o controle rotativo é usado para mudar o valor de cada opção, da mesma forma que os botões Esquerda e Direita fazem no GD-77.
+Nas telas de menu os botões **Acima** e **Abaixo** se movem para cima e para baixo e o controle rotativo é usado para mudar o valor de cada opção, da mesma forma que os botões Esquerda e Direita fazem no GD-77.
 - O TYT MD-9600 | Retevis RT-90 é um radio móvel com botões no painel frontal e no microfone. Veja a seção sobre o MD-9600 para informação sobre teclas e mapeamento de botões.
 
 
 <div style="page-break-after: always; break-after: page;"></div>
 
-## Main screens (VFO and Channel modes)
+## Telas principais (modos VFO e Canal)
 
-The firmware has 2 main screens, the VFO screen and the Channel screen. These are similar to the Channel and VFO screens in the official firmware, except having additional functionalities.
+O The firmware tem duas telas principais, a tela VFO e a tela Canal. Essas são similares as telas Canal e VFO do firmware oficial, exceto que elas tem funcionalidades adicionais.
 
-Initially after the firmware is installed, the VFO screen will be displayed.
+Inicialmente após a instalação do firmware, a tela VFO será mostrada.
 
-![VFO screen](media/vfo-screen.png)
+![Tela VFO](media/vfo-screen.png)
 
-The frequency used in the VFO for both Tx and Rx will be read from the *VFO A* settings of the codeplug.
+A frequência usada no VFO para ambos Tx e Rx será lida da configuração *VFO A* do codeplug.
 
-On both the VFO and Channel screens, the mode (**DMR** or **FM**) is shown in the top left of the display, and the battery voltage or percentage is shown in the top right of the display.
+Em ambas as telas VFO e Canal, o modo (**DMR** ou **FM**) é mostrado no canto superior esquerdo do display, e a tensão ou porcentagem da bateria é mostrada no canto superior direito.
 
-In **DMR** mode, the current *TimeSlot* is shown to the right of the **DMR** text, *e.g.* **TS2** for TimeSlot 2, and the *Color Code*, *e.g.* **C1** for Color Code 1, is shown to the left of the battery voltage / percentage. When TimeSlot filtering is turned off, the **TS1** or **TS2** indicator is in inverse colour.
+No modo **DMR**, o *TimeSlot* atual é mostrado à direita do texto **DMR**, *por ex.* **TS2** para o TimeSlot 2, e o código de cor *Color Code*, *ex.* **C1** para o código de cor 1, é mostrado à esquerda da tensão / porcentagem da bateria. Quando o filtro de TimeSlot está desligado, o indicador **TS1** ou **TS2** está em vídeo reverso.
 
-The current Tx power is shown in the middle of the top of the screen (*e.g.* 750mW).
+A potência de transmissão atual é mostrada no meio da parte superior da tela (*ex.* 750mW).
 
-On the **VFO** screen, the TX and RX frequencies are shown, as well as the TalkGroup when in DMR mode.
+Na tela **VFO**, as frequências de TX e RX são mostradas, assim como o grupo de conversa (TalkGroup), quando no modo DMR.
 
-The arrow to the left of the **R** (receive frequency) indicates that the keypad **Up** and **Down** arrows and number entry keys will control the RX frequency.
+A seta à esquerda do **R** (frequência de recepção) indica que as teclas de seta **Acima** e **Abaixo** e as teclas de entrada numérica irão controlar a frequência de recepção (RX).
 
-The channel screen displays the same information in the top row, but displays the **Channel name** (in this example __*Lee Hill*__) as well as the **Zone** (__*Home DMR*__).
+A tela de canal mostra a mesma informação na linha superior, mas mostra o **Nome do Canal** (nesse exemplo __*Lee Hill*__) assim como a **Zona** (__*Home DMR*__).
 
-In DMR mode the **TalkGroup** (in this case __*ColoradoHD*__), will also be displayed.
+No modo DMR o **TalkGroup** (nesse caso __*ColoradoHD*__), também será mostrado.
 
 ![displayed information](media/dmr-screen.png)
 
 
-On both the VFO and Channel screens:
+Em ambas as telas VFO e Canal:
 
-- Press the **Red** menu button to toggle between the VFO and Channel screens (*Note:* on radios like the Baofeng DM-1801 and RD-5R, press the **MR/VFO** button to toggle between Channel and VFO mode).
-- Press the **Green** menu key to enter the menu system.
-- Press **Function + Green** for quick access to the [Channel details](#channel-details) screen, which can also be accessed via the menu system.
+- Pressione a tecla de menu **Vermelho** para mudar entre as telas VFO e Canal (*Nota:* em rádios iguais ao Baofeng DM-1801 e RD-5R, pressione o botão **MR/VFO** para mudar entre o modo Canal e VFO).
+- Pressione a tecla de menu **Verde** para entrar no sistema de menus.
+- Pressione **Função + Verde** para acesso rápido a tela dos [Detalhes do Canal](#channel-details), que também pode ser acessada via sistema de menus.
 
-*Note:*
+*Nota:*
 
-- The VFO is actually a special type of Channel; hence the [Channel Details](#channel-details) screen also works for the VFO.
+- O VFO atualmente é um tipo especial de canal; assim a tela [Detalhes do Canal](#channel-details) também funciona para o VFO.
 
-### Changing between FM mode and DMR mode
+### Alternando entre os modos FM e DMR
 
-- Press the **SK2** + **Star** keys to toggle between FM and DMR mode, on either the **VFO** or **Channel** screens.
+- Pressione as teclas **SK2** + **Estrela** para alternar entre os modos FM e DMR, em ambas as telas **VFO** ou **Canal**.
 
-### Changing Timeslot in DMR mode
+### Mudando o Timeslot no modo DMR
 
-- In DMR mode, pressing the **Star** key toggles between *TimeSlot 1* and *TimeSlot 2* and sets this as the Timeslot override.
+- No modo DMR, pressionar a tecla **Estrela** alterna entre *TimeSlot 1* e *TimeSlot 2* e define a opção escolhida como substituição temporária da configuração atual do Timeslot (Timeslot Override).
 
-To clear a Timeslot override, press and hold the **Star** key.
+Para apagar o Timeslot override, pressione e segure a tecla **Estrela** (também conhecida como asterisco).
 
-### Automatic setting of Talkgroup/PrivateCall and Timeslot in DMR mode
+### Ajuste automático de grupo de conversa, chamada privada (Talkgroup/PrivateCall) e Timeslot no modo DMR
 
-When in DMR mode, if the DMR filter is turned off, it's possible to automatically set the radio to the right Talkgroup (even if it's **not** in the TG list or defined as the channel's contact) while receiving:
+Quando no modo DMR, se o filtro DMR estiver desligado, é possível ajustar automaticamente o rádio para o Talkgroup (TG) correto (mesmo se ele **não** estiver na lista de TG ou definido como contato do canal) durante a recepção:
 
- - While receiving, click the SK2 button once, the radio will set Talkgroup override by itself.
+ - Enquanto estiver recbendo, aprete o botão SK2 uma vez, o rádio irá ativar o Talkgroup override (substituição temporária do grupo de conversa) por conta própria.
 
-*Note:*
+*Nota:*
 
-- If the Timeslot filter is turned off, it will be also overriden.
+- Se o filtro de Timeslot estiver desligado, também será substituído.
 
-To clear the overrides, see [Changing Timeslot in DMR mode](#changing-timeslot-in-dmr-mode) and [Manual TalkGroup number entry](#manual-talkgroup-number-entry) sections.
+Para apagar os overrides, veja as seções [Mudando o Timeslot no modo DMR](#changing-timeslot-in-dmr-mode) e [Entrada Manual do número de TalkGroup](#manual-talkgroup-number-entry).
 
-### Changing bandwidth in FM mode
+### Mudando a largura de banda no modo FM
 
-- In FM mode, pressing the **Star** key toggles between 25kHz and 12.5kHz bandwidth.
+- No modo FM, pressionar a tecla **Estrela** alterna entre largura de banda do canal entre 25kHz e 12.5kHz.
 
 ### Controlling Tx power
 
