@@ -556,23 +556,23 @@ Para acessar esse nível de potência, escolha o ajuste máximo de potência, en
 - A potência de saída em ajustes de **1W** ou abaixo **não são** muito precisas, porque a calibração só mantém pontos de dados para os valores de potência de **1W** e **5W**.
 - Entre **1W** e **5W**, a potência do FET do PA é aproximandamente "diretamente proporcional" ao nível de drive do PA, por isso, os níveis de drive interpolados resultam em níveis de potência *razoavelmente precisos* para **2W**, **3W** e **4W**.
 - However, below **1W** the PA FET output power **is not directly proportional** to the PA drive level, and **considerably varies** between different radios. Hence, the power accuracy below **1W** is at best around **80% accurate**.
-- Also, the PA FET minimum operational power threshold is very close to (or sometimes even above) **50mW**, so operating at this power level **can produce unwanted spurious emissions**.
-- Please confirm your power output and spectral emissions **before** using the **50mW** setting anywhere it may cause interference.
+- Além disso, o limiar operacional mínimo do FET do PA é muito próximo (ou às vezes até mesmo acima) de **50mW**, assim operar nesse nível de potência **pode produzir emissões espúrias indesejadas**.
+- Por favor confirme sua potência de saída e emissões espectrais **antes** de usar o ajuste **50mW** em qualquer lugar, porque ele pode causar interferencia.
 
-### Signal strength bar graph
+### Gráfico de barra de intensidade de sinal
 
-In both FM and DMR modes, the signal strength of the received signal is shown as a bar graph across the width of the screen.
+Em ambos os modos FM e DMR, a intensidade de sinal do sinal recebido é mostrada como um gráfico de barra que de desloca pela largura da tela.
 
-**100%** bar graph is approximately **S9 +40dB**.
+O gráfico de barra em **100%** é aproximadamente **S9 +40dB**.
 
-In FM mode the signal meter should operate all the time.
+No modo FM, o medidor de sinal deve operar durante todo o tempo.
 
 ![signal meter](media/signal-meter.png)
 
-*Notes:*
+*Notas:*
 
-- Currently, the S meter reading is **not** very accurate because the radio hardware Rx sensitivity is **not calibrated** at the factory.
-- Hence, the value displayed is based on a radio with average sensitivity, individual radios may be **more or less** sensitive than average, therefore the S meter will read **higher or lower** than is absolutely correct.
+- Atualmente, a leitura do S meter **não é** muito precisa porque a sensibilidade de Rx do hardware do rádio **não é calibrada** na fábrica.
+- Por isso, o valor mostrado é baseado em um rádio com sensibilidade dentro da média. Rádios individuais podm ser **mais ou menos** sensiveis que a média, portantoo S meter irá mostrar **a mais ou a menos** do que é absolutamente correto.
 
 ### Channel screen specific functionality
 
