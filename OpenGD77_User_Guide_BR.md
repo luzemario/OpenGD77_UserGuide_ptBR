@@ -520,41 +520,41 @@ O firmware tem duas formas principais de controlar a potência de saída:
 1. O controle de potência **Mestre** (Master), que controla a potência de ambos os VFOs, e também todos os canais.
 2. Potência específica do **Canal**.
 
-Por padrão, todos os Canais  are set to use the **Master** power, however this setting can be changed in the CPS (and also in the **Channel Details** screen), so that individual channels have their own custom power setting.
+Por padrão, todos os Canais são configurados para usar o ajuste de potência **Mestre**, contudo, essa configuração pode ser modificada no CPS (e também na tela **Detalhes do Canal**), assim canais individuais podem ter sua própria configuração personalizada de ajuste de potência.
 
-When a Channel has a custom power setting, the power will be displayed in a **Bold font**.
+Quando um Canal tem um ajuste personalizado no nível de potência, a potência será mostrada em **Negrito**.
 
-Increasing and decreasing the power on a Channel with a custom power setting will temporarily override the power on the Channel, but this change is not saved to the codeplug. So, changing channels will result in the temporary override being lost.
+Aumentar ou baixar a potência em um canal com um ajuste personalizado irá temporariamente sobrepor a configuração de potência para o Canal, mas essa modificação não é salva para o codeplug. Assim, mudar de canal fará com que a alteração temporária na potência seja perdida.
 
-To make a **permanent** change to a Channel custom power value, you must open the [**Channel Details**](#channel-details) screen, and then exit by pressing **SK2** + **Green**.
+Para fazer uma modificação **permanente** para o valor personalizado de potência do Canal, você deve abrir a tela [**Detalhes do Canal**](#channel-details), e então sair pressionando **SK2** + **Verde**.
 
-Increasing or decreasing the power level on a Channel which uses the **Master** power control, will change the **Master** power level **for all other channels** which use the **Master** power and **also both VFOs**.
+Aumentar ou baixar o nível de potência em um Canal que usa o controle de potência **Mestre** irá mudar o nível de potência **Mestre** também **para todos os outros canais** que usam o ajuste de potência **Mestre** e ainda **ambos os VFOs**.
 
 <div style="page-break-after: always; break-after: page;"></div>
 
-Changing the power on **either** VFO also changes the **Master** power setting.
+Mudar a potência em **qualquer** VFO também muda o ajuste de potência **Master**.
 
-- Press **SK2** + **Right** to increase the power.
-- Press **SK2** + **Left** to decrease the power.
+- Pressione **SK2** + **Direita** para aumentar a potência.
+- Press **SK2** + **esquerda** para diminuir a potência.
 
-Power can be set to **50mW**, **250mW**, **500mW**, **750mW**, **1W**, **2W**, **3W**, **4W**, **5W** and **+W-**.
-The MD-9600 has higher power output and the power settings are different.
+A potência pode ser ajsutada para **50mW**, **250mW**, **500mW**, **750mW**, **1W**, **2W**, **3W**, **4W**, **5W** e **+W-**.
+O MD-9600 tem potência de saída maior e os ajustes de potência são diferentes.
 
-The **+W-** power setting configures the PA drive to the value specified by the User Power value in the Options menu.
-By default, this is set to the maximum value which will result in the radio producing its maximum advertised power
-**Power settings resulting in the radio producing more than it is designed to produce, is for emergency use only, as extended may damage the PA**
+O ajuste de potência **+W-** configura o drive do amplificador de potência (PA) para o valor especificado pela configuração "Potência do Usuário" no Menu de Opções.
+Por padrão, esse valor é ajustado para o máximo possível. Isso fará com que o rádio produza a máxima potência que conseguir.
+**O ajuste de potência que resulte no rádio dar mais potência do que é projetado para produzir deve ser usado com cautela, em emergências somente, uma vez que o uso extendido poderá danificar o PA**
 
-If the User power setting is configured to a lower value, it can also be used for very low power output, for example less than 50mW.
-See the User power setting menu for more information.
+Se o nível de Potência do Usuário for configurado para um valor muito pequeno, poderá ser utilizado para saídas de muito baixa potência, por exemplo, menos que 50mW.
+Veja o menu de configuração da Potência do Usuário para mais informações.
 
 
-To access this power setting, select the maximum power setting, then press and hold **SK2** + **Right**
+Para acessar esse nível de potência, escolha o ajuste máximo de potência, então pressione e segure **SK2** + **Direita**
 
-*Notes:*
+*Notas:*
 
-- The power output will only be correct after the operator has calibrated their own radio, as these radios **do not seem to have very accurate power calibration applied in the factory**.
-- Power output on settings below **1W** is **not** very accurate, because the calibration only holds data points for the **1W** and **5W** power values.
-- Between **1W** and **5W**, the PA FET output power is approximately directly proportional to the PA drive level, hence the interpolated drive levels result in *reasonably accurate* power levels for **2W**, **3W** and **4W**.
+- A potência de saída só será correta depois que o operador tiver calibrado seu rádio, porque esses rádios **não aparentam possuir uma calibração de potência muito precisa aplicada na fábrica**.
+- A potência de saída em ajustes de **1W** ou abaixo **não são** muito precisas, porque a calibração só mantém pontos de dados para os valores de potência de **1W** e **5W**.
+- Entre **1W** e **5W**, a potência do FET do PA é aproximandamente "diretamente proporcional" ao nível de drive do PA, por isso, os níveis de drive interpolados resultam em níveis de potência *razoavelmente precisos* para **2W**, **3W** e **4W**.
 - However, below **1W** the PA FET output power **is not directly proportional** to the PA drive level, and **considerably varies** between different radios. Hence, the power accuracy below **1W** is at best around **80% accurate**.
 - Also, the PA FET minimum operational power threshold is very close to (or sometimes even above) **50mW**, so operating at this power level **can produce unwanted spurious emissions**.
 - Please confirm your power output and spectral emissions **before** using the **50mW** setting anywhere it may cause interference.
