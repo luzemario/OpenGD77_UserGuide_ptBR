@@ -574,35 +574,35 @@ No modo FM, o medidor de sinal deve operar durante todo o tempo.
 - Atualmente, a leitura do S meter **não é** muito precisa porque a sensibilidade de Rx do hardware do rádio **não é calibrada** na fábrica.
 - Por isso, o valor mostrado é baseado em um rádio com sensibilidade dentro da média. Rádios individuais podm ser **mais ou menos** sensiveis que a média, portantoo S meter irá mostrar **a mais ou a menos** do que é absolutamente correto.
 
-### Channel screen specific functionality
+### Funcionalidade específica da tela de Canal
 
-The Channel screen displays the current Channel number as well as the current zone.
+A tela de Canal mostra o número do Canal atual, bem como a zona atual.
 
 ![channel and zone](media/channel-and-zone.png)
 
-#### Changing channels within the current zone<!-- linebreak -->
+#### Mudando canais dentro da zona atual<!-- linebreak -->
 
-- Pressing the **Up** or **Down** arrow keys changes the Channel in the current zone, and the Channel number in the zone will be displayed beside the zone name.
+- Pressionar as teclas de seta **Acima** ou **Abaixo** muda o Canal dentro da zona atual, e o número do Canal na zona será exibido ao lado do nome da zona.
 
-#### Changing zones<!-- linebreak -->
+#### Mudando zonas<!-- linebreak -->
 
-- Pressing **SK2** + **Up** arrow or **SK2** + **Down** arrow changes to the next or previous Zone, respectively.
+- Pressionar **SK2** + seta **Acima** ou **SK2** + seta **Abaixo** muda para a próxima zona ou a zona anterior, respectivamente.
 
 ![another zone](media/changing-zones.png)
 
-#### Displaying the channel Frequency<!-- linebreak -->
+#### Mostrando a frequência do canal<!-- linebreak -->
 
-- Press and hold the **SK1** button to display the Rx and Tx frequency in both DMR and FM mode.
-
-
-#### Displaying FM specific channel information<!-- linebreak -->
-
-- Press and hold the **SK1** button to display FM specific information: CTCSS / DCS and squelch setting.
+- Pressione e segure o botão **SK1** para mostrar as frequências de Rx e Tx, tanto no modo DMR quanto no FM.
 
 
-#### Reverse repeater operation<!-- linebreak -->
+#### Exibindo informações espcíficas do canal FM<!-- linebreak -->
 
-- Channel mode: Pressing and holding the **Hash** key and the Tx and Rx frequencies for the channel will be exchanged. The channel name is shown in inverse video.
+- Pressione e segure o botão **SK1** para mostrar informações específicas de FM: CTCSS / DCS e ajuste do silenciador.
+
+
+#### Operação no reverso da repetidora<!-- linebreak -->
+
+- Modo Canal: Pressione e segure a tecla **Grade** (#, também chamada cerquilha, hash, cruz, etc), e as frequências de Tx e Rx para o canal serão trocadas. O nome do canal será mostrado em vídeo reverso.
 - VFO mode: Pressing and holding **SK1** and **SK2** and the Tx and Rx frequencies will be exchanged.
 - The radio remains locked in Reverse repeater mode even if the channel or zone is changed.
 - To exit from Reverse repeater mode, press and hold **Hash**
