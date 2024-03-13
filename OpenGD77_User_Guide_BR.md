@@ -603,65 +603,65 @@ A tela de Canal mostra o número do Canal atual, bem como a zona atual.
 #### Operação no reverso da repetidora<!-- linebreak -->
 
 - Modo Canal: Pressione e segure a tecla **Grade** (#, também chamada cerquilha, hash, cruz, etc), e as frequências de Tx e Rx para o canal serão trocadas. O nome do canal será mostrado em vídeo reverso.
-- VFO mode: Pressing and holding **SK1** and **SK2** and the Tx and Rx frequencies will be exchanged.
-- The radio remains locked in Reverse repeater mode even if the channel or zone is changed.
-- To exit from Reverse repeater mode, press and hold **Hash**
+- Modo VFO: Pressione e segure **SK1** e **SK2** e as frequências de Tx e Rx serão trocadas.
+- O rádio permanece bloqueado no modo reverso mesmo se o canal ou zona forem mudados.
+- Para sair do modo reverso, pressione e segure **Grade**
 
-*Note:*
+*Nota:*
 
-- This is mutually exclusive with Channel's [Talkaround](#talkaround).
+- Essa função é mutuamente exclusiva com a função [Talkaround](#talkaround) do Canal. Ou seja, ou usa o reverso ou o Talkaround, mas não ambos ao mesmo tempo.
 
 
-#### Channel Quick Menu<!-- linebreak -->
+#### Menu rápido do Canal<!-- linebreak -->
 
-- Pressing the **Orange** button on the top of the radio in Channel mode displays the Quick Menu for the Channel screen. Note that in Quick Menu, the **Orange** button has the same function as the **Green** key, which confirms your current selection.
+- Pressinar o botão **Laranja** no topo do rádio em modo Canal exibe o Menu Rápido para a tela de Canal. Note que no Menu Rápido, o botão **Laranja** tem a mesma funçãoda tecla **Verde**, que confirma sua seleção atual.
 
 ![channel quick menu](media/channel-quick-menu.png)
 
-*Note:*
+*Nota:*
 
-- The Baofeng RD-5R and MD-UV380 do not have an **Orange** button. 
+- O Baofeng RD-5R e o MD-UV380 não tem um botão **Laranja**. 
 
-On the Baofeng RD-5R press and hold the orange coloured **MR/VFO** button to enter the Quick menu.
-On the TYT MD-UV380 press **SK1** and the **Green** button
+No Baofeng RD-5R pressione e segure o botão de cor laranja **MR/VFO** para entrar no Menu Rápido.
+No TYT MD-UV380 pressione **SK1** e o botão **Verde**
 
-##### Copying a channel to VFO<!-- linebreak -->
+##### Copando um canal para o VFO<!-- linebreak -->
 
-- Press the **Orange** button or **Green** key to copy the content of the current channel to the VFO.
+- Pressione o botão **Laranja** ou a tecla **Verde** para copiar o conteúdo do canal atual para o VFO.
 
-##### Read the VFO into the current channel<!-- linebreak -->
+##### Gravar o VFO no canal atual<!-- linebreak -->
 
-- Press the **Orange** button or **Green** key to confirm and save the updated channel to the codeplug memory. **Red** key to cancel.
+- Pressione o botão **Laranja** ou a tecla **Verde** para confirmar e salvar o canal atualizado para a memória de codeplug. Tecla **Vermelha** para cancelar.
 
 
 <div style="page-break-after: always; break-after: page;"></div>
 
-##### Filter<!-- linebreak -->
+##### Filtros<!-- linebreak -->
 
-- **Filter** in FM Mode
+- **Filtros** no modo FM
 
-  - Use the **Right** or **Left** arrows to enable or disable CTCSS / DCS filtering.
+  - Use as setas **Direita** ou **Esquerda** para ativar ou desativar os filtros CTCSS / DCS.
 
-- **Filter** in DMR mode
+- **Filtros** no modo DMR
 
-  - Use the **Right** or **Left** arrows to select:
+  - Use as setas **Direita** ou **Esquerda** para selecionar:
 
-    - **None**: for no filtering, *i.e.* **promiscuous** mode.
-    - **TG**: to filter by the selected *Talkgroup*.
-    - **Ct**: to filter by *Private Call Contacts* in the codeplug.
-    - **TGL**: to filter by *Talkgroups* in the TG list.
+    - **Nenhum**: para não usar filtros, *por ex.* modo **promíscuo**.
+    - **TG**: para filtrar pelo *Grupo de Conversa* (Talkgroup) selecionado.
+    - **Ct**: para filtrar pelos *Contatos de Chamada Privada* (Private Call) no codeplug.
+    - **TGL**: para filtrar pelos *Grupos de Conversa* na lista de TG.
 
-  When this filter is enabled, the *DMR* mode indication at the top of the screen is displayed in inverse video.
+  Quando o filtro estiver ativado, a indicação do modo *DMR* no topo da tela será exibida em vídeo reverso.
 
-- **CC Scan** (*DMR mode only*) (formerly known as **CC Filter**)
+- **Varredura de CC** (*modo DMR somente*) (anteriomente conhecido como **Filtro CC**)
 
-  This setting allows the radio to receive DMR signals even if the Colour Code is not known.
-  **But the setting does not actually disable the CC requirement**, because the hardware, HR-C6000 chip, does not support reception of DMR signals without a Colour Code being specified.  
-  The functionality of the CC scanning being enabled, is performed by a software algorithm, written by Colin G4EML, where the CC value set in the HR-C6000 is changed for every DMR TS frame that is received, until the HR-C6000 reports that the CC of the Rx DMR signal is the same as the CC which has been set in the HR-C6000.
+  Essa configuração permite que o rádio receba sinais mesmo quando o Código de Cor (Color Code, ou simplesmente CC) não seja conhecido.
+  **Mas essa configuração atualmente não destativa o requerimento do CC**, porque o hardware, o chip HR-C6000, não suporta a recepção de sinais DMR sem um Código de Cor ser especificado.  
+  Quando a funcionalidade de varredura (scanning) está ativada, é executada por um algoritimo de software, escrito por Colin G4EML, onde o valor do CC ajustado no HR-C6000 é modificado para cada frame DMR TS que é recebido, até que o HR-C6000 reporte que o CC do sinal de Rx do DMR é o mesmo CC que foi ajustado no HR-C6000.
 
-  This feature should **NOT** be used for normal operation, the CC match detection is slow, and can cause the DMR signals to not be received correctly until the CC is found by the algorithm.
+  Esse recurso **NÂO DEVE** ser usado na operação normal. A detecção de CC é lenta, e pode fazer com que os sinais DMR nao sejam recebidos corretamente até que o CC seja encontrado pelo algorítimo.
 
-  - Use the **Right** or **Left** arrows to enable or disable.
+  - Use as setas **Direita** ou **Esquerda** para ativar ou desativar.
 
   When *Color Code* scanning is enabled, the *Color Code* number is displayed in inverse video.
 
