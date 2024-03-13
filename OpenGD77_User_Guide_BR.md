@@ -663,49 +663,49 @@ No TYT MD-UV380 pressione **SK1** e o botão **Verde**
 
   - Use as setas **Direita** ou **Esquerda** para ativar ou desativar.
 
-  When *Color Code* scanning is enabled, the *Color Code* number is displayed in inverse video.
+  Quando a varredura de *Código de Cor* está ativa, o número *Color Code* é mostrado em vídeo reverso.
 
-- **TS Filter** (*DMR mode only*)
+- **Filtro TS** (*modo DMR somente*)
 
-  Controls whether the radio filters by *Timeslot*.
+  Controla se o rádio filtra por *Timeslot*.
 
-  - Use the **Right** or **Left** arrows to enable or disable.
+  - Use as setas **Direita** ou **Esquerda** para ativar ou desativar.
 
-  When *Timeslot* filtering is disabled the *Timeslot* number is displayed in inverse video.
+  Quando o filtro de *Timeslot* está desativado, o número do *Timeslot* é mostrado em vídeo reverso.
 
-  *Notes:*
+  *Notas:*
   
-  - This feature does not actually disable a filter, because the DMR hardware chip, HR-C6000, does not fully support reception of signals on both timeslots at the same time.
-  - This feature uses a software algorithm written by Daniel F1RMB, which initially listens for caller ID data on both timeslots, and when valid data occurs on a timeslot, the firmware just listens on that timeslot.
-  - If caller ID is not present on the received timeslot for a timeout period of approximately 2.5 seconds, the algorithm checks on the other timeslot and switches to that if caller ID data is on that timeslot.
+  - Eesse recurso atualmente não desativa um filtro, porque o chip do hardare do DMR, HR-C6000, não suporta completamente a recepção de sinais em ambos os timeslots ao mesmo tempo.
+  - Esse recurso usa um algoritimo de software, escrito por Daniel F1RMB, que inicialmente ouve os dados de ID do chamador em ambos os timeslots, e quando dados válidos ocorrem em um deles, o firmware simplesmente escuta nesse timeslot.
+  - Se o ID do chamador não estiver presente no timeslot recebido por um período de timeout de aproximadamente 2,5 segundos, o algorítimo checa no outro timeslot e muda para ele se os dados de ID do chamador estiverem nesse timeslot.
 
 
 ##### Talkaround<!-- linebreak -->
 
-Once enabled, the TX frequency will be set to the RX frequency, hence you will be able to transmit on a repeater's output, in simplex mode.
+Quando ativado, a frequência de TX será ajustada para a frequência de RX, assim você poderá transmitir na saída do repetidor, em modo simplex.
 
-*Note:*
+*Nota:*
 
-- This option is only available if the current Channel has a frequency shift.
-- This is mutually exclusive with [Reverse repeater operation](#reverse-repeater-operation).
+- Essa opção somente está disponível se o Canal atual tiver um deslocamento nas frequências (shift).
+- Essa opção é mutuamente exclusiva com a [Operação no reverso da repetidora](#reverse-repeater-operation).
 
-##### Dist sort<!-- linebreak -->
+##### Ordenar distância<!-- linebreak -->
 
-If the transceiver location is set (Radio Info's [Location screen](#location-screen) or GPS), the current Zone will be sorted in the ascending distance order.
+Se o local do transceptor estiver definido (A tela de [Localização](#location-screen) em Informações do Radio ou GPS), a Zona atual será ordenada pela ordem de distância ascendente.
 
-The distance, in kilometers, is displayed on the right of the Zone name.
+A distância, em quilômetros, é exibida à direita do nome da Zona.
 
-Of course, for this to work, the repeater locations must be set on the relevant channels, using the CPS.
+É claro, para que isso funcione, a localização das repetidoras deve ser configurada nos canais relevantes, usando o CPS.
 
-*Notes*:
+*Notas*:
 
-- All Channels zone will never be sorted.
-- The distance to repeater can also be displayed without sorting, see **Display option** [Show dist](#show-distance).
+- A zona "Todos os Canais" nunca será ordenada.
+- A distância para o repetidor também pode ser mostrada sem ordenação, veja **Opções de Tela** [Mostra Distância](#show-distance).
 
 
 <div style="page-break-after: always; break-after: page;"></div>
 
-#### VFO Quick Menu<!-- linebreak -->
+#### Menu Rápido do VFO<!-- linebreak -->
 
 - Pressing the **Orange** button on the top of the radio in VFO mode displays the Quick menu for the VFO screen. Currently, this has five options.
 
