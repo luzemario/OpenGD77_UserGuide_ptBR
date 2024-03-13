@@ -707,116 +707,116 @@ A distância, em quilômetros, é exibida à direita do nome da Zona.
 
 #### Menu Rápido do VFO<!-- linebreak -->
 
-- Pressing the **Orange** button on the top of the radio in VFO mode displays the Quick menu for the VFO screen. Currently, this has five options.
+- Pressionar o botão **Laranja** no topo do rádio no modo VFO exibe o Menu Rápido para a tela do VFO. Atualmente, ele tem cinco opções.
 
 ![VFO quick menu](media/vfo-quick-menu.png)
 
-*Note:*
+*Nota:*
 
-- The Baofeng RD-5R does not have an **Orange** button. On this radio press and hold the orange coloured **MR/VFO** button to enter the Quick menu
+- O Baofeng RD-5R não tem um botão **Laranja**. Nesse rádio pressione e segure o botão laranja **MR/VFO** para entrar no Menu Rápido
 
-##### VFO selection A or B<!-- linebreak -->
+##### Seleção de VFO A ou B<!-- linebreak -->
 
-- Pressing the **Orange** button twice while in VFO mode quickly toggles between **VFO A** and **VFO B**.
-- On the Baofeng DM-1801 | DM-860, this function is controlled using the **A/B** button.
-- **Long Press** of the **Red** button also changes from VFO A to VFO B, or vice versa.
+- Pressionar o botão **Laranja** duas vezes enquanto no modo VFO muda rapidamente entre o **VFO A** e o **VFO B**.
+- No Baofeng DM-1801 | DM-860, essa função é controlada usando o botão **A/B**.
+- **Pressionamento Longo** do botão **Vermelho** também muda do VFO A para o VFO B, ou vice versa.
 
-##### Exchange the TX and RX frequencies<!-- linebreak -->
+##### Trocar as frequências de TX e RX<!-- linebreak -->
 
-This function essentially reverses the TX and RX frequencies.
+Essa função essencialmente inverte as frequências de TX e RX.
 
-- Press **Green** key or **Orange** button to confirm.
+- Pressione a tecla **Verde** ou o botão **Laranja** para confirmar.
 
-##### Copy the RX frequency to the TX frequency<!-- linebreak -->
+##### Copiar a frequência de RX para a frequência de TX<!-- linebreak -->
 
-Copies the Rx frequency to the Tx frequency.
+Copia a frequência de Rx para a frequência de Tx.
 
-- Press **Green** key or **Orange** button to confirm.
+- Pressione a tecla **Verde** ou o botão **Laranja** para confirmar.
 
-##### Copy Tx frequency to the Rx frequency<!-- linebreak -->
+##### Copiar a frequência de TX para a frequência de RX<!-- linebreak -->
 
-Copies the Tx frequency to the Rx frequency.
+Copia a frequência de Tx para a frequência de Rx.
 
-- Press **Green** key or **Orange** button to confirm.
+- Pressione a tecla **Verde** ou o botão **Laranja** para confirmar.
 
-##### Filter (*DMR mode only*)<!-- linebreak -->
+##### Filtro (*DMR mode only*)<!-- linebreak -->
 
-This function is identical to the Filter described for Channel mode operation ([above](#filter))
+Essa função é identica ao Filtro descrito para a operação no modo Canal ([acima](#filter))
 
-##### VFO to New Channel<!-- linebreak -->
+##### VFO para Novo Canal<!-- linebreak -->
 
-The **VFO --> New Chan** option, creates a new channel using the current VFO settings.
+A opção **VFO --> Novo Canal**, cria um novo canal usando as configurações atuais do VFO.
 
-The name of the new channel uses the format "**New channel** *NNN*", where *NNN* is the next available number in the *All Channels* zone.
+O nome do novo canal usa o formato "**New channel** *NNN*", onde *NNN* é o próximo número disponível na zona *Todos os Canais*.
 
-The Channel will also be added to the currently active Zone in the Channel screen. If the Channel screen is set to the *All Channels* zone, the channel will be added to that zone.
+O canal também será adicionado na Zona atual ativa, na tela de Canal. Se a tela de Canal estiver ajustada para a zona *Todos os Canais*, o canal será adicionado a essa zona.
 
-##### Tone Scan for CTCSS or DCS tone in FM<!-- linebreak -->
+##### Varredura de subtom (Tone Scan) para tom CTCSS ou DCS em FM<!-- linebreak -->
 
-This scans for any **CTCSS** or **DCS** tones, and sets the VFO to these parameters.
+Essa varredura procura qualquer tom **CTCSS** ou **DCS**, e ajusta o VFO para esses parâmetros.
 
-The default is to scan **All** tones (CTCSS and DCS). To scan for CTCSS or DCS only, press the **Right** or **Left** arrow keys to select **CTCSS** or **DCS**.
+O padrão é procurar por **Todos** os tons (CTCSS e DCS). Para procurar por CTCSS ou DCS somente, pressione as teclas de seta **Direita** ou **Esquerda** para selecionar **CTCSS** ou **DCS**.
 
-- Press the **Orange** button or **Green** key to confirm the copy, or **Red** key to cancel.
+- Pressione o botão **Laranja** ou a tecla **Verde** para confirmar a seleção, ou a tecla **Vermelha** para cancelar.
 
-Canceling the scan restores the Rx CTCSS / DCS to its value prior to the scan being started.
+Cancelar a varredura restaura o CTCSS / DCS de Rx para o valor de antes da verredura ser iniciada.
 
-If a tone is detected; both the Rx and Tx CTCSS / DCS values are set to the tone which was detected by the scan.
+Se um tom for detectado, ambos os valores de Rx e Tx do CTCSS / DCS são ajustados para o tom que foi detectado pela varredura.
 
 
 <div style="page-break-after: always; break-after: page;"></div>
 
-### DMR specific functionality (*VFO and Channel screens*)
+### Funcionalidade específica do DMR (telas *VFO e Canal*)
 
-#### Timeslot selection<!-- linebreak -->
+#### Seleção de Timeslot<!-- linebreak -->
 
-- The **Star** key toggles between *TimeSlot 1* and *TimeSlot 2*.
+- A tecla **Estrela** alterna entre *TimeSlot 1* e *TimeSlot 2*.
 
-#### DMR ID callsign and name display<!-- linebreak -->
+#### Exibição de indicativo DMR ID e nome<!-- linebreak -->
 
-When a DMR signal is received which uses the same *Color Code* as selected for the VFO or Channel, the radio display will show the station’s **Talkgroup** and **DMR ID**.
+Qaundo um sinal DMR é recebido que usa o mesmo *Código de Cor*, como selecionado para o Canal ou VFO, a tela do rádio irá mostrar o **Talkgroup** e **DMR ID** da estação.
 
 ![talkgroup and DMR ID](media/talkgroup-and-dmr-id.png)
 
-If the DMR ID is in the *DMR ID database*, previously loaded into the radio, the **callsign** and **name** will be displayed.
+Se o ID do DMR estiver no *Banco de dados de DMR ID*, previamente carregado no rádio, o **indicativo** e o **nome** serão mostrados.
 
 ![callsign and name](media/callsign-and-name.png)
 
-#### Talker Alias display<!-- linebreak -->
+#### Exibição de Talker Alias<!-- linebreak -->
 
-If receiving a signal from the *Brandmeister* network, and if the station’s DMR ID is not in the radio's *DMR ID database*, the display will show the **Talker Alias** information sent by *Brandmeister*.
+Se receber um sinal da rede *Brandmeister*, e se o DMR ID da estação não estiver no *Banco de dados de DMR ID* do rádio, a tela mostrará a informação **Talker Alias** enviada pela rede *Brandmeister*.
 
 ![talker alias](media/talker-alias.png)
 
-The callsign will be displayed in the centre of the screen, and additional information will be displayed at the bottom of the screen. The additional information will default to the text "**DMR ID:**" followed by the station's **DMR ID number**.
+O indicativo será mostrado no centro da tela, e as informações adicionais na parte de baixo. A informação adicional por padrão será o texto "**DMR ID:**" seguido pelo número de identificação (ID) da estação **Número do DMR ID**.
 
 
 <div style="page-break-after: always; break-after: page;"></div>
 
-If the station has entered any data into the **APRS section** of their Brandmeister “*Self care*” page, that text will be displayed in place of the DMR ID number.
+Se a estação tiver entrado quaisquer dados na **Seção APRS** da página “*Self care*” da Brandmeister dela, esse texto será mostrado no lugar do número DMR ID.
 
 ![talker alias data](media/talker-alias-data.png)
 
-*Note:*
+*Nota:*
 
-- As the **Talker Alias** data is sent slowly as it is embedded inside the DMR audio data frames, the callsign will appear first and about half a second later the DMR ID or other text will arrive via the DMR data and be displayed.
+- Como os dados de **Talker Alias** são enviados lentamente por serem embutidos dentro dos frames de áudio do DMR, o indicativo aparecerá primeiro, e depois de aproximandamente meio segundo, o DMR ID ou outro texto chegará via dados DMR e será mostrado.
 
-#### Talkgroup selection from the TG list<!-- linebreak -->
+#### Seleção de Grupo de Conversa (Talkgroup) da lista de TG<!-- linebreak -->
 
-Press the **Left** or **Right** arrow keys to cycle through the *TalkGroups* in the **TG List** assigned to the VFO or Channel in the CPS.
+Pressione as teclas de seta **Esquerda** ou **Direita** para percorrer os *TalkGroups* na **Lista de TG** (TG List) atribuídos ao VFO ou Canal pelo CPS.
 
-This *TalkGroup* will apply to **both** RX and TX.
+Esse *TalkGroup* será aplicado a **ambos** RX e TX.
 
-- If a Channel does not have a *TG List* assigned, then the Contact assigned to the Channel will be used, and the **Left** and **Right** arrows will have no effect.
-- If a Channel does not have *TG List* assigned, and the Contact is also assigned to **None** or **N/A**, the radio will default to using **TG 9**.
+- Se um canal não tiver uma *Lista de TG* atribuída, o Contato atribuído ao Canal será usado, e as setas **Esqerda** e **Direita** não terão efeito.
+- Se um canal não tiver uma *Lista de TG* atribuída, e o Contato estiver definido como **Nenhum** ou **N/A**, o rádio vai usar por padrão o **TG 9**.
 
-*Note:*
+*Nota:*
 
-- The Baofeng RD-5R does not have **Right** and **Left** arrow keys. Use the **A/B** button as the left arrow and the **Band** button as the right arrow.
+- O Baofeng RD-5R não tem teclas de seta **Direita** e **Esquerda**. Use o botão **A/B** como seta esquerda e o botão **Band** como seta direita.
 
-#### Assignment of Timeslot to Digital Contact TalkGroup<!-- linebreak -->
+#### Atribuição de Timeslot ao Grupo de Conversa do Contato Digital<!-- linebreak -->
 
-A new feature introduced to the CPS allows a default *TimeSlot* to be applied to each **Digital Contact** or **TalkGroup**.
+Um novo recurso introduzido no CPS permite um *TimeSlot* padrão to be applied to each **Digital Contact** or **TalkGroup**.
 
 By default, the **Channel TS override** is disabled. This means that if the **Left** or **Right** arrows are pressed to select this **TG** within the *TG list*, the *Timeslot* assigned to the Channel (*in the CPS*) or manually changed using the **Star** key will not change.
 
