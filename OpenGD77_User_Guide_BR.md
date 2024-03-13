@@ -466,7 +466,7 @@ No modo **DMR**, o *TimeSlot* atual é mostrado à direita do texto **DMR**, *po
 
 A potência de transmissão atual é mostrada no meio da parte superior da tela (*ex.* 750mW).
 
-Na tela **VFO**, as frequências de TX e RX são mostradas, assim como o grupo de conversa (TalkGroup), quando no modo DMR.
+Na tela **VFO**, as frequências de TX e RX são mostradas, assim como o Grupo de Conversa (TalkGroup), quando no modo DMR.
 
 A seta à esquerda do **R** (frequência de recepção) indica que as teclas de seta **Acima** e **Abaixo** e as teclas de entrada numérica irão controlar a frequência de recepção (RX).
 
@@ -497,7 +497,7 @@ Em ambas as telas VFO e Canal:
 
 Para apagar o Timeslot override, pressione e segure a tecla **Estrela** (também conhecida como asterisco).
 
-### Ajuste automático de grupo de conversa, chamada privada (Talkgroup/PrivateCall) e Timeslot no modo DMR
+### Ajuste automático de grupo de conversa (Talkgroup), chamada privada (PrivateCall) e Timeslot no modo DMR
 
 Quando no modo DMR, se o filtro DMR estiver desligado, é possível ajustar automaticamente o rádio para o Talkgroup (TG) correto (mesmo se ele **não** estiver na lista de TG ou definido como contato do canal) durante a recepção:
 
@@ -816,23 +816,23 @@ Esse *TalkGroup* será aplicado a **ambos** RX e TX.
 
 #### Atribuição de Timeslot ao Grupo de Conversa do Contato Digital<!-- linebreak -->
 
-Um novo recurso introduzido no CPS permite um *TimeSlot* padrão to be applied to each **Digital Contact** or **TalkGroup**.
+Um novo recurso introduzido no CPS permite um *TimeSlot* padrão ser aplicado a cada **Contato Digital** ou **Grupo de Conversa**.
 
-By default, the **Channel TS override** is disabled. This means that if the **Left** or **Right** arrows are pressed to select this **TG** within the *TG list*, the *Timeslot* assigned to the Channel (*in the CPS*) or manually changed using the **Star** key will not change.
+Por padrão, a **Substituição de TS do Canal** é desativada. Isso significa que se as setas **Esquerda** ou **Direita** forem pressionadas para selecionar o **TG** dentro da *Lista de TG*, o *Timeslot* atribuído ao Canal (*no CPS*) ou mudado manualmente usando a tecla **Estrela** não mudará.
 
-However, if the **Digital Contact** has an **override TS** assigned (*e.g.* TS 1), when this **Digital Contact TG** is selected by pressing the **Right** or **Left** arrows, the *Timeslot* will be set to the *Timeslot* assigned to the **Digital Contact TG**.  
-In this case, the Timeslot is displayed as **cS***x* on the Channel/VFO screens (cS1 in this example).
+Contudo, se o **Contato Digital** tem uma **substituição de TS** atribuída (*por ex.* TS 1), quando o **TG do Contato Digital** for selecionado pelas setas **Direita** ou **Esqeurda**, o *Timeslot* será ajustado para aquele atribuído ao **TG do Contato Digital**.  
+Nesse caso, o Timeslot é mostrado como **cS***x* nas telas Canal/VFO (cS1 nesse exemplo).
 
 
 <div style="page-break-after: always; break-after: page;"></div>
 
-#### TalkGroup displayed in inverse video<!-- linebreak -->
+#### Grupo de Conversa mostrado em video reverso<!-- linebreak -->
 
-If a *Talkgroup* is displayed in inverse video during reception of a DMR signal, this indicates that the current *TX TalkGroup* **does not match** the received *TalkGroup*, hence pressing the **PTT** would not transmit back to the station on the same *TalkGroup*.
+Se um *Talkgroup* for mostrado em vídeo reverso durante a recepção de um sinal DMR, isso indica que o Grupo de Conversa de TX (*TX TalkGroup*) **não combina** com o *TalkGroup* recebido, por isso pressionar **PTT** não irá transmitir de volta para a estação no mesmo *TalkGroup*.
 
 ![talkgroup in inverse video](media/talkgroup-inverse-video.png)
 
-If you want to transmit on the same *TalkGroup* as the currently received signal, press the **SK2** button on the side of the radio **while** the *TalkGroup* is being displayed in inverse. The *TX TalkGroup* will now be set to the *RX TalkGroup*.
+Se você quiser transmitir no mesmo *TalkGroup* do sinal atualmente recebido, pressione o botão **SK2** do lado do rádio **enquanto** o *TalkGroup* estiver sendo mostrado em vídeo reverso. O *TX TalkGroup* será então ajustado para o *RX TalkGroup*.
 
 ![talkgroup temporary set](media/talkgroup-override.png)
 
