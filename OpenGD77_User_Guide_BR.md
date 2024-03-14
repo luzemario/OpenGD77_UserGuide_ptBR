@@ -850,105 +850,105 @@ Quando um *TG* foi **entrado manualmente**, a tela mostra uma caixa com **1 pixe
 
 ![talkgroup override](media/talkgroup-manually-entered.png)
 
-#### Private Call number entry<!-- linebreak -->
+#### Entrada de número de Chamada Privada (Private Call)<!-- linebreak -->
 
-- Press the **Hash** (**#**) two times to enter a Private Call DMR ID number.
+- Pressione a tecla **Grade** (**#**) duas vezes para entrar um número de ID do DMR para chamada privada.
 
 ![personal DMR ID entry screen](media/private-call-entry.png)
 
-In all numeric entry screens, pressing the **Red** menu key exits back to the previous screen, either the VFO or Channel screen.
+Em todas as telas de entrada numérica, pressionar a tecla de menu **Vermelha** volta para a tela anterior, seja a tela de VFO ou Canal.
 
-#### Digital Contact selection<!-- linebreak -->
+#### Seleção de Contato Digital<!-- linebreak -->
 
-- Press the **Hash** (**#**) three times to access the Digital contacts defined in the CPS.
+- Pressione a tecla **Grade** (**#**) três vezes para acessar os Contatos Digitais definidos no CPS.
 
 ![contact selection screen](media/contact-selection.png)
 
-The contact name is shown in the middle of the screen, *e.g.* “**TG 505 TS2**” and the *TalkGroup* or *PC* number is shown in smaller text at the bottom of the screen.
+O nome do contato é mostrado no meio da tela, *por ex.* “**TG 505 TS2**” e o número do *TalkGroup* ou Contato Pessoal (*PC*) é mostrado em texto menor na parte de baixo da tela.
 
-- Press the **Up** or **Down** arrows to cycle through the list of *Digital Contacts*.
-- Press **Green** to select or **Red** to cancel.
+- Pressione as setas **Acima** ou **Abaixo** para percorrer a lista de *Contatos Digitais*.
+- Pressione **Verde** para selecionar ou **Vermelho** para cancelar.
 
-Private calls can also be selected in this manner.
+Chamadas Privadas também podem ser selecionadas dessa maneira.
 
 ![private call selection](media/private-call-selection.png)
 
-#### Station DMR ID number entry<!-- linebreak -->
+#### Entrada de número DMR ID da estação<!-- linebreak -->
 
-- In **Contact selection mode**, press **SK2** + **Hash** (**#**) key, and an *alternative* **DMR ID** can be entered for the radio (*for test purposes*) to temporarily override your normal DMR ID number which was loaded from the codeplug.
+- No **Modo de seleção de Contatos**, pressione as teclas **SK2** + **Grade** (**#**). Um **DMR ID** *alternativo* pode ser entrado no rádio (*para propósito de testes*) de forma a substituir temporariamente seu número de DMR ID normal, que foi carregado pelo codeplug.
 
 ![DMR ID entry screen](media/user-dmr-id.png)
 
-This DMR ID will be used for transmission **until** the radio is rebooted or you enter another DMR ID via the same screen.
+Esse DMR ID será usado para a transmissão **até que o rádio seja reiniciado**, ou você entre outro DMR ID pela mesma tela.
 
-To make the change permanent, so that it’s written back to the codeplug Press **SK2** + **Green** instead of **Green** to confirm the number.
+Para tornar a modificação permanente, de forma que seja salva de volta no codeplug, pressione **SK2** + **Verde** ao invés de **Verde** para confirmar o número.
 
 
 <div style="page-break-after: always; break-after: page;"></div>
 
-### FM specific functionality (*VFO and Channel screens*)
+### Funcionalidade específica de FM (*Telas VFO e Canal*)
 
-#### FM and FM Narrow<!-- linebreak -->
+#### FM e FM Faixa estreita (Narrow)<!-- linebreak -->
 
-For FM with **25kHz bandwidth** with the text “**FM**” is displayed in the top left of the screen. For narrow band **12.5kHz bandwidth** the text “**FMN**” is displayed.
+Para FM com **25kHz de largura de banda**, o texto “**FM**” é mostrado no canto superior esquerdo da tela. Já para faixa estreita com **12.5kHz de largura de banda**, o texto “**FMN**” é exibido.
 
-#### CTCSS Tone or DCS Code<!-- linebreak -->
+#### Tom CTCSS ou Código DCS<!-- linebreak -->
 
-These can be set for the Channel or VFO. The letters **C** or **D** and **T**, **R**, or **TR** will be displayed next to the FM indicator at the top of the screen.
+Esses podem ser configurados para o Chanal ou o VFO. AS letras **C** ou **D** e **T**, **R**, ou **TR** serão mostradas próximo ao indicador FM no topo da tela.
 
 ![CSS status](media/ctcss-tone.png)
 
-**C** means CTCSS and **D** means DCS code. **T** means Tx tone or code only. **R** means RX tone or code only. **TR** means both Tx and Rx tones or codes are configured.
+**C** significa CTCSS, **D** significa código DCS. **T** indica tom (ou código) somente no Tx. **R** indica tom (ou código) somente no RX. **TR** significa que os tons (ou códigos) foram configurados tanto em Tx quanto em Rx.
 
-It is possible to configure Tx and Rx tones or codes independently.
+É possível configurar tons ou códigos em Tx e Rx independentemente.
 
-#### Squelch<!-- linebreak -->
+#### Silenciador (Squelch)<!-- linebreak -->
 
-- Pressing **Left** or **Right** keys, controls the FM squelch.
+- Pressionar as teclas **Esquerda** ou **Direita**, controla o silenciador em FM.
 
 ![squelch level](media/squelch.png)
 
-Once in squelch control mode, pressing **Right** tightens the squelch incrementally, **Left** opens up the squelch incrementally. The VFO and each channel have individual squelch settings that can be set in this manner.
+Dentro do modo de controle do silenciador, pressionar **Direita** fecha o squelch incrementalmente, **Esquerda** abre o squelch incrementalmente. O VFO e cada canal tem configurações individuais de silenciador que podem ser ajustadas dessa forma.
 
-The variable squelch can be set to different values for each Channel and for the VFO using a new feature in the CPS, where the squelch can be set anywhere between **Open** and **Closed** in **5% steps**.
+O silenciador variável pode ser ajustado para valores diferentes para cada Canal e para o VFO usando um novo recurso no CPS, onde o squelch pode ser ajustado em qualquer posição entre **Aberto** e **Fechado** em **passos de 5%**.
 
-In this example the squelch in the VFO is set to 20%.
+Nesse exemplo o squelch do VFO está ajustado para 20%.
 
-If the squelch is changed in the VFO the value will be remembered even if the radio is power cycled. However, if the squelch on a channel is changed, the value is only a temporary override.
+Se o silenciador for mudado no VFO, o valor será lembrado mesmo que o rádio seja reiniciado. Contudo, se o silenciador de um canal for mudado, o valor é só uma substituição temporária.
 
-To make the squelch change permanent to a Channel, press **SK2** + **Green** to enter the *Channel Details* screen, and then press **SK2** + **Green** again to save the channel data to the codeplug.
+Para tornar as mudanças no squelch permanentes para um Canal, pressione **SK2** + **Verde** para entrar na tela de *Detalhes do Canal*, e então pressione **SK2** + **Verde** novamente para salvar os dados do canal para o codeplug.
 
-*Note:*
+*Nota:*
 
-- If Rx CTCSS is enabled, this has priority over the squelch control, and lowering the squelch threshold will not cause the squelch to be opened.
+- Se o CTCSS de Rx estiver ativado, tem prioridade sobre o controle do silenciador, e baixar além do nível de limiar não fará com que o squelch seja aberto.
 
-#### 1750Hz Tone for repeater operation<!-- linebreak -->
+#### Tom de 1750Hz para operação em repetidora<!-- linebreak -->
 
-- Pressing the **SK2** button during FM transmission, sends the 1750Hz tone required for some repeater operation.
+- Pressionar o botão **SK2** durante a transmissão em FM envia o tom de 1750Hz requerido para operação em algumas repetidoras.
 
-#### DTMF tone transmission<!-- linebreak -->
+#### Transmissão de tom DTMF<!-- linebreak -->
 
-- Pressing any key (except the **Green** and **Red** menu keys) on the keypad during transmission will transmit the DTMF tones for that key.
+- Pressionar qualquer tecla no teclado frontal (exceto as teclas de menu **Verde** e **vermelha**) durante a transmissão fará com que sejam transmitidos os tons DTMF para essa tecla.
 
-The tone will also be audible through the speaker on the GD-77, RD-5R, DM-1801 and DM-1801A.
-On the MD-UV380 and MD-9600 a tone is played through the speaker, but this is not the DTMF tone that is transmitted, because the hardware on these radios does not support playing the actual DTMF tone through the speaker.
+O tom também será audível através do alto-falante no GD-77, RD-5R, DM-1801 e DM-1801A.
+No MD-UV380 e MD-9600, um tom é emitido atráves do alto-falante. Mas esse não é o tom DTMF que é transmitido, porque o hardware desses rádios não suporta tocar os tons DTMF reais através do alto-falante.
 
-The MD-9600 microphone buttons for A, B, C and D are already used for other functions, e.g. A = ESC/Red button, so the following key sequences need to be used to enter letters A, B, C and D
+Os botões do microfone do The MD-9600 para A, B, C e D já são usados para outras funções. Por ex. A = botão vermelho/ESC, assim as seguintes sequências de tecla precisam ser usadas para entrar as letras A, B, C e D:
 
-| **Key(s)** | **DTMF** |
+| **Tecla(s)** | **DTMF** |
 | --- | --- |
-| **Up** | A |
-| **SK1** + **Up** | B |
-| **Down** | C |
-| **SK1** + **Down** | D |
+| **Acima** | A |
+| **SK1** + **Acima** | B |
+| **Abaixo** | C |
+| **SK1** + **Abaixo** | D |
 
-*Note:*
+*Nota:*
 
-- Currently the MD-9600 version of the firmware can not transmit CTCSS or DCS at the same time as DTMF
+- Atualmente a versão do firmware do MD-9600 não pode transmitir CTCSS ou DCS ao mesmo tempo com o DTMF
 
-#### DTMF sequence entry and transmission<!-- linebreak -->
+#### Entrada de sequência DTMF e transmissão<!-- linebreak -->
 
-- Press the **Hash** (**#**) key to enter a DTMF sequence (pressing SK2 + Left, deletes a character)
+- Pressione a tecla **Grade** (**#**) para entrar uma sequência DTMF (pressionar SK2 + Esquerda deleta um caracter)
 
 ![dtmf entry screen](media/dtmf-sequence-entry.png)
 
