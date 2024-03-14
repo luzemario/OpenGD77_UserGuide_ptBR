@@ -952,21 +952,21 @@ Os botões do microfone do The MD-9600 para A, B, C e D já são usados para out
 
 ![dtmf entry screen](media/dtmf-sequence-entry.png)
 
-- Press the **SK2** + **Hash** (**#**) toggles between DTMF Entry and DTMF contact list screens.
-
+- Pressionar **SK2** + **Grade** (**#**) alterna entre as telas de entrada DTMF e a lista de contatos DTMF.
+  
 ![dtmf contact list screen](media/dtmf-contact-list.png)
 
-- Press **Green** key to transmit that sequence.
-- Any key press will stop the current sequence transmission.
+- Pressione a tecla **Verde** para transmitir essa sequência.
+- Qualquer tecla pressionada irá interromper a transmissão da sequência atual.
 
-#### FM APRS location transmission<!-- linebreak -->
+#### Transmissão da localização FM APRS<!-- linebreak -->
 
-The firmware can transmit FM Automatic Packet Reporting System data (APRS), as an FM AFSK 1200 baud or 300 baud transmission, using the location entered into the radio, or using the GPS location for radios with GPS fitted.
+O firmware pode transmitir dados em FM da rede Automatic Packet Reporting System (APRS), como uma transmissão FM AFSK 1200 baud ou 300 baud, seja usando o local entrado no rádio, ou usando a localização GPS para os rádios com GPS instalado.
 
-See [https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System](https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System)
+Veja [https://pt.wikipedia.org/wiki/APRS](https://pt.wikipedia.org/wiki/APRS)
 
-To transmit APRS, at least one APRS configuration must be defined using the CPS, and the current channel or VFO must have an APRS configuration selected in its APRS setting. (See channel details APRS settings)
-Also the operator's callsign must be entered into the CPS, and the radio location must be valid, either by manual entry of the location, or by using the GPS in the radio, if fitted.
+Para transmitir APRS, pelo menos uma configuração APRS deve ser definida usando o CPS, e o canal atual ou VFO deve ter uma configuração APRS selecionada. (Veja Configurações APRS em Detalhes do Canal)
+Também é necessário que o indicativo do operador seja entrado no CPS, e a localização do rádio esteja válida, seja por entrada manual do local, ou pelo uso do GPS no rádio, se instalado.
 
 
 Also, the beaconing mode as to be defined (see the [APRS Options](#aprs-options))
