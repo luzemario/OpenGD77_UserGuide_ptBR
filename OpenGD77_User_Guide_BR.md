@@ -832,21 +832,21 @@ Se um *Talkgroup* for mostrado em vídeo reverso durante a recepção de um sina
 
 ![talkgroup in inverse video](media/talkgroup-inverse-video.png)
 
-Se você quiser transmitir no mesmo *TalkGroup* do sinal atualmente recebido, pressione o botão **SK2** do lado do rádio **enquanto** o *TalkGroup* estiver sendo mostrado em vídeo reverso. O *TX TalkGroup* será então ajustado para o *RX TalkGroup*.
+Se você quiser transmitir no mesmo Grupo de Conversa (*TalkGroup*) do sinal atualmente recebido, pressione o botão **SK2** do lado do rádio **enquanto** o *TalkGroup* estiver sendo mostrado em vídeo reverso. O *TX TalkGroup* será então ajustado para o *RX TalkGroup*.
 
 ![talkgroup temporary set](media/talkgroup-override.png)
 
-#### Manual TalkGroup number entry<!-- linebreak -->
+#### Entrada manual do número do Grupo de Conversa (TG)<!-- linebreak -->
 
-- Press the **Hash** (**#**) key to enter an *ad hoc* TalkGroup number, followed by the **Green** key to confirm.
+- Pressione a tecla **Grade** (**#**) para entrar um número de TalkGroup via método *ad hoc*, ou seja, entrar o número de TG diretamente, seguido da tecla **Verde** para confirmar.
 
 ![talkgroup entry screen](media/talkgroup-entry.png)
 
-If the entered **TG** is in the *Digital Contacts*, the name of the **TG Contact** will be displayed, otherwise the number will be displayed *e.g.* **TG 98977**.
+Se o **TG** entrado estiver nos *Contatos Digitais*, o nome do **TG do Contato** será mostrado, caso contrário o número será mostrado. *por ex.* **TG 98977**.
 
-- To return to the previous *TG* prior to manually entering the TG, press either the **Left** or **Right** arrows keys.
+- Para retornar ao *TG* anterior que estava antes de de entrar manualmente o TG, pressione as teclas de seta **Esquerda** ou **Direita**.
 
-When a *TG* has been **manually entered**, the display shows a **1 pixel box** around the TG display area to indicate that this TG has been manually entered, even if the *Contact / TG name* is displayed rather than the TG number.
+Quando um *TG* foi **entrado manualmente**, a tela mostra uma caixa com **1 pixel de espessura** ao redor da área de exibição do TG para indicar que esse TG foi digitado manualmente, mesmo se o *Contato / Nome do TG* for mostrado ao invés do número.
 
 ![talkgroup override](media/talkgroup-manually-entered.png)
 
