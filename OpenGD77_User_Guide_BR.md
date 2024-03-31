@@ -43,7 +43,7 @@ Para as últimas informações e discussões, por favor se dirija ao forum de de
         * [Copiar a frequência TX para a frequência RX](#copy-tx-frequency-to-the-rx-frequency)
         * [Filtro](#filter)
         * [VFO para um novo Canal](#vfo-to-new-channel)
-        * [Varredura de tom para CTCSS ou tom DCS em FM](#tone-scan-for-ctcss-or-dcs-tone-in-fm)
+        * [Varredura de tom para CTCSS ou código DCS em FM](#tone-scan-for-ctcss-or-dcs-tone-in-fm)
     * [Funcionalidade específica do DMR (telas VFO e Canal)](#dmr-specific-functionality-vfo-and-channel-screens)
       * [Seleção de Timeslot](#timeslot-selection)
       * [Exibição de indictivo DMR ID e nome](#dmr-id-callsign-and-name-display)
