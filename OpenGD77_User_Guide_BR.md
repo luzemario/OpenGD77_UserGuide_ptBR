@@ -965,7 +965,7 @@ O firmware pode transmitir dados em FM da rede Automatic Packet Reporting System
 
 Veja [https://pt.wikipedia.org/wiki/APRS](https://pt.wikipedia.org/wiki/APRS)
 
-Para transmitir APRS, pelo menos uma configuração APRS deve ser definida usando o CPS, e o canal atual ou VFO deve ter uma configuração APRS selecionada. (Veja Configurações APRS em Detalhes do Canal)
+Para transmitir APRS, pelo menos uma configuração APRS deve ser definida usando o CPS, e o canal atual ou VFO deve ter uma configuração APRS selecionada (veja Configurações APRS em Detalhes do Canal).
 Também é necessário que o indicativo do operador seja entrado no CPS, e a localização do rádio esteja válida, seja por entrada manual do local, ou pelo uso do GPS no rádio, se instalado.
 
 
