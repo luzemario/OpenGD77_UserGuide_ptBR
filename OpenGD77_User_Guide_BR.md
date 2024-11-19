@@ -535,7 +535,7 @@ Aumentar ou baixar o nível de potência em um Canal que usa o controle de potê
 Mudar a potência em **qualquer** VFO também muda o ajuste de potência **Master**.
 
 - Pressione **SK2** + **Direita** para aumentar a potência.
-- Press **SK2** + **esquerda** para diminuir a potência.
+- Pressione **SK2** + **esquerda** para diminuir a potência.
 
 A potência pode ser ajsutada para **50mW**, **250mW**, **500mW**, **750mW**, **1W**, **2W**, **3W**, **4W**, **5W** e **+W-**.
 O MD-9600 tem potência de saída maior e os ajustes de potência são diferentes.
@@ -555,7 +555,7 @@ Para acessar esse nível de potência, escolha o ajuste máximo de potência, en
 - A potência de saída só será correta depois que o operador tiver calibrado seu rádio, porque esses rádios **não aparentam possuir uma calibração de potência muito precisa aplicada na fábrica**.
 - A potência de saída em ajustes de **1W** ou abaixo **não são** muito precisas, porque a calibração só mantém pontos de dados para os valores de potência de **1W** e **5W**.
 - Entre **1W** e **5W**, a potência do FET do PA é aproximandamente "diretamente proporcional" ao nível de drive do PA, por isso, os níveis de drive interpolados resultam em níveis de potência *razoavelmente precisos* para **2W**, **3W** e **4W**.
-- However, below **1W** the PA FET output power **is not directly proportional** to the PA drive level, and **considerably varies** between different radios. Hence, the power accuracy below **1W** is at best around **80% accurate**.
+- Contudo, abaixo de **1W** a potência de saída do FET do PA **não é diretamente proporcional** ao nível de drive do PA, e **varia consideravelmente** entre diferentes rádios. Assim, a precisão na potência abaixo de **1W** é, na melhor das hipóteses, em torno de **80% preciso**.
 - Além disso, o limiar operacional mínimo do FET do PA é muito próximo (ou às vezes até mesmo acima) de **50mW**, assim operar nesse nível de potência **pode produzir emissões espúrias indesejadas**.
 - Por favor confirme sua potência de saída e emissões espectrais **antes** de usar o ajuste **50mW** em qualquer lugar, porque ele pode causar interferencia.
 
@@ -572,7 +572,7 @@ No modo FM, o medidor de sinal deve operar durante todo o tempo.
 *Notas:*
 
 - Atualmente, a leitura do S meter **não é** muito precisa porque a sensibilidade de Rx do hardware do rádio **não é calibrada** na fábrica.
-- Por isso, o valor mostrado é baseado em um rádio com sensibilidade dentro da média. Rádios individuais podm ser **mais ou menos** sensiveis que a média, portantoo S meter irá mostrar **a mais ou a menos** do que é absolutamente correto.
+- Por isso, o valor mostrado é baseado em um rádio com sensibilidade dentro da média. Rádios individuais podm ser **mais ou menos** sensiveis que a média, portanto, o S meter irá mostrar **a mais ou a menos** do que é absolutamente correto.
 
 ### Funcionalidade específica da tela de Canal
 
