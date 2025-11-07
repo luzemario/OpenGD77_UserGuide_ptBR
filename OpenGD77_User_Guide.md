@@ -33,18 +33,24 @@ For the latest information and discussions, please refer to the development and 
       * [Displaying the channel Frequency](#displaying-the-channel-frequency)
       * [Displaying FM specific channel information](#displaying-fm-specific-channel-information)
       * [Reverse repeater operation](#reverse-repeater-operation)
-      * [Channel Quick Menu](#channel-quick-menu)
-        * [Copying a channel to VFO](#copying-a-channel-to-vfo)
-        * [Read the VFO into the current channel](#read-the-vfo-into-the-current-channel)
-        * [Filter](#filter)
-      * [VFO Quick Menu](#vfo-quick-menu)
-        * [VFO selection A or B](#vfo-selection-a-or-b)
-        * [Exchange the TX and RX frequencies](#exchange-the-tx-and-rx-frequencies)
-        * [Copy the RX frequency to the TX frequency](#copy-the-rx-frequency-to-the-tx-frequency)
-        * [Copy TX frequency to the RX frequency](#copy-tx-frequency-to-the-rx-frequency)
-        * [Filter](#filter)
-        * [VFO to New Channel](#vfo-to-new-channel)
-        * [Tone Scan for CTCSS or DCS tone in FM](#tone-scan-for-ctcss-or-dcs-tone-in-fm)
+    * [Channel Quick Menu](#channel-quick-menu)
+      * [Copying a channel to VFO](#copying-a-channel-to-vfo)
+      * [Read the VFO into the current channel](#read-the-vfo-into-the-current-channel)
+      * [Filters (Channel)](#filters-channel)
+      * [Talkaround](#talkaround)
+      * [Roaming](#roaming)
+      * [Mute](#mute)
+    * [VFO Quick Menu](#vfo-quick-menu)
+      * [VFO selection A or B](#vfo-selection-a-or-b)
+      * [Exchange the TX and RX frequencies](#exchange-the-tx-and-rx-frequencies)
+      * [Copy the RX frequency to the TX frequency](#copy-the-rx-frequency-to-the-tx-frequency)
+      * [Copy TX frequency to the RX frequency](#copy-tx-frequency-to-the-rx-frequency)
+      * [Filters (VFO)](#filters-vfo)
+      * [VFO to New Channel](#vfo-to-new-channel)
+      * [Tone Scan for CTCSS or DCS tone in FM](#tone-scan-for-ctcss-or-dcs-tone-in-fm)
+      * [Dual Watch](#dual-watch)
+      * [Freq Bind](#freq-bind)
+      * [Mute](#mute)
     * [DMR specific functionality (VFO and Channel screens)](#dmr-specific-functionality-vfo-and-channel-screens)
       * [Timeslot selection](#timeslot-selection)
       * [DMR ID callsign and name display](#dmr-id-callsign-and-name-display)
@@ -107,16 +113,17 @@ For the latest information and discussions, please refer to the development and 
           * [Hotspot](#hotspot)
           * [Temp Cal](#temp-cal)
           * [Batt Cal](#batt-cal)
-          * [Time Cal](#time-cal)
           * [Eco Level](#eco-level)
           * [Suspend](#suspend)
           * [Safe Pwr-On](#safe-power-on)
-          * [Auto Pwr-Off](#auto-power-off)
+          * [APO](#apo-auto-power-off)
           * [APO with RF](#apo-with-rf)
           * [Sat (Satellite follow mode)](#sat-satellite-follow-mode)
           * [GPS](#gps)
+          * [Locked](#locked)
         * [Radio Options](#radio-options)
           * [Band Limits](#band-limits)
+          * [TX Inhibit](#tx-inhibit)
           * [Filter time](#filter-time)
           * [Scan delay](#scan-delay)
           * [Scan dwell](#scan-dwell)
@@ -129,7 +136,9 @@ For the latest information and discussions, please refer to the development and 
           * [Allow PC](#allow-pc)
           * [User Power](#user-power)
           * [DMR crc](#dmr-crc)
+          * [Mode](#mode)
         * [Display Options](#display-options)
+          * [Text size](#text-size)
           * [Brightness](#brightness)
           * [Nite Bright](#nite-bright)
           * [Min Bright](#min-bright)
@@ -140,13 +149,15 @@ For the latest information and discussions, please refer to the development and 
           * [Auto night](#auto-night)
           * [Order](#order)
           * [Contact](#contact)
+          * [Time](#time-in-header)
           * [Battery (units)](#battery-units)
           * [Info](#info)
           * [Volume](#volume)
           * [LEDs](#leds)
           * [Timezone](#timezone)
-          * [Time](#time-display-format)
+          * [UTC](#utclocal-time-display-format)
           * [Show dist](#show-distance)
+          * [Last talker](#last-talker)
         * [Sound Options](#sound-options)
           * [Timeout beep](#timeout-beep)
           * [Beep volume](#beep-volume)
@@ -155,7 +166,7 @@ For the latest information and discussions, please refer to the development and 
           * [Talker](#talker)
           * [DMR mic](#dmr-mic)
           * [FM mic](#fm-mic)
-          * [VOX threshold](#vox-threshold)
+          * [VOX Threshold](#vox-threshold)
           * [VOX Tail](#vox-tail)
           * [Prompt](#prompt)
           * [DMR Rx AGC](#dmr-rx-agc)
@@ -169,6 +180,7 @@ For the latest information and discussions, please refer to the development and 
           * [Theme Items](#here-is-the-detailed-list-of-the-theme-items)
         * [APRS Options](#aprs-options)
           * [Mode](#beaconing-mode)
+          * [Ch Power](#beaconing-ch-power)
           * [Location](#beaconing-location)
           * [Interval](#beaconing-initial-interval)
           * [Decay](#beaconing-decay-algorithm)
@@ -187,6 +199,9 @@ For the latest information and discussions, please refer to the development and 
       * [TX](#tx)
         * [Repeater Shifts](#repeater-shifts)
       * [Mode](#mode)
+      * [Location](#location)
+      * [Lat](#lat)
+      * [Lon](#lon)
       * [DMR ID](#dmr-id)
       * [Color Code](#color-code)
       * [Timeslot](#timeslot)
@@ -207,7 +222,8 @@ For the latest information and discussions, please refer to the development and 
       * [Eco](#eco-channel)
       * [TA Tx TS1](#ta-tx-tsx)
       * [TA Tx TS2](#ta-tx-tsx)
-	  * [APRS](#aprs-channel)
+      * [APRS](#aprs-channel)
+      * [Force DMO](#force-dmo)
       * [Accepting and saving the changes to the channel](#accepting-and-saving-the-changes-to-the-channel)
     * [Satellite Screen](#satellite-screen)
       * [Polar view](#polar-view)
@@ -222,9 +238,10 @@ For the latest information and discussions, please refer to the development and 
     * [To make a Private Call](#to-make-a-private-call)
     * [To Receive a Private Call](#to-receive-a-private-call)
   * [Hotspot mode](#hotspot-mode)
-  * [Resetting the Settings](#resetting-the-settings)
+  * [Resetting the Settings](#boot-key-combinations)
+  * [Boot key combinations](#boot-key-combinations)
   * [GD-77S operation](#gd-77s-operation)
-    * [GD77S Channel / TG mode](#gd77s-channel--tg-mode)
+    * [GD77S Channel/TG mode](#gd77s-channeltg-mode)
     * [GD77S Scan mode](#gd77s-scan-mode)
     * [GD77S Timeslot mode](#gd77s-timeslot-mode)
     * [GD77S Color Code mode](#gd77s-color-code-mode)
@@ -315,7 +332,7 @@ So basically if your radio does not receive or transmit, try a different firmwar
 - Versions with JA in the name are localised for Japanese users and only support Japanese and English languages
 
 - **OpenGD77 CPS**
-<https://www.opengd77.com/downloads/PC_CPS_20230910/Latest>
+<https://www.opengd77.com/viewtopic.php?f=12&t=3877>
 
 
 - **Latest Source code for fully released firmware:**
@@ -613,7 +630,7 @@ The Channel screen displays the current Channel number as well as the current zo
 - This is mutually exclusive with Channel's [Talkaround](#talkaround).
 
 
-#### Channel Quick Menu<!-- linebreak -->
+### Channel Quick Menu<!-- linebreak -->
 
 - Pressing the **Orange** button on the top of the radio in Channel mode displays the Quick Menu for the Channel screen. Note that in Quick Menu, the **Orange** button has the same function as the **Green** key, which confirms your current selection.
 
@@ -626,22 +643,24 @@ The Channel screen displays the current Channel number as well as the current zo
 On the Baofeng RD-5R press and hold the orange coloured **MR/VFO** button to enter the Quick menu.
 On the TYT MD-UV380 press **SK1** and the **Green** button
 
-##### Copying a channel to VFO<!-- linebreak -->
+#### Copying a channel to VFO<!-- linebreak -->
 
 - Press the **Orange** button or **Green** key to copy the content of the current channel to the VFO.
 
-##### Read the VFO into the current channel<!-- linebreak -->
+#### Read the VFO into the current channel<!-- linebreak -->
 
 - Press the **Orange** button or **Green** key to confirm and save the updated channel to the codeplug memory. **Red** key to cancel.
 
 
 <div style="page-break-after: always; break-after: page;"></div>
 
-##### Filter<!-- linebreak -->
+#### Filters (Channel)<!-- linebreak -->
 
 - **Filter** in FM Mode
 
   - Use the **Right** or **Left** arrows to enable or disable CTCSS / DCS filtering.
+
+  When this filter is disabled, and any Rx or Tx Tone/Code is set for the Channel/VFO, the [CTCSS Tone or DCS Code](#ctcss-tone-or-dcs-code) indication at the top of the screen is displayed in inverse video.
 
 - **Filter** in DMR mode
 
@@ -681,7 +700,7 @@ On the TYT MD-UV380 press **SK1** and the **Green** button
   - If caller ID is not present on the received timeslot for a timeout period of approximately 2.5 seconds, the algorithm checks on the other timeslot and switches to that if caller ID data is on that timeslot.
 
 
-##### Talkaround<!-- linebreak -->
+#### Talkaround<!-- linebreak -->
 
 Once enabled, the TX frequency will be set to the RX frequency, hence you will be able to transmit on a repeater's output, in simplex mode.
 
@@ -690,23 +709,38 @@ Once enabled, the TX frequency will be set to the RX frequency, hence you will b
 - This option is only available if the current Channel has a frequency shift.
 - This is mutually exclusive with [Reverse repeater operation](#reverse-repeater-operation).
 
-##### Dist sort<!-- linebreak -->
+#### Roaming<!-- linebreak -->
 
-If the transceiver location is set (Radio Info's [Location screen](#location-screen) or GPS), the current Zone will be sorted in the ascending distance order.
+If the transceiver location is set (Radio Info's [Location screen](#location-screen) or GPS), the current Zone will be sorted in the ascending distance order, and the first channel in the zone will be selected.
+Options are: Off, Manual, 5km, 10km and 20km
+
+- Off: The zone is not sorted
+- Manual: The zone is sorted in the ascending distance order when this option is selected, or it is reselected.
+- 5km, 10km and 20km: When the radio's location has changed by this distance, the zone will be re-sorted in the ascending distance order, and the first channel in the zone will be selected. If following the sorting, the first channel in the zone has changed, an alert beep will be played and the screen backlight will be turned on.
 
 The distance, in kilometers, is displayed on the right of the Zone name.
 
-Of course, for this to work, the repeater locations must be set on the relevant channels, using the CPS.
+Of course, for this to work, the repeater locations must be set on the relevant channels, using the CPS, and the Use Location checkbox must be ticked.
 
 *Notes*:
 
 - All Channels zone will never be sorted.
+- The zone will not be sorted while transmitting, but will be sorted during Rx even if the radio is receiving a signal
+- Roaming is disabled while scanning.
 - The distance to repeater can also be displayed without sorting, see **Display option** [Show dist](#show-distance).
+- When the distance sorting is enabled, the zone area will be displayed:
+  - in inverse video on monochrom platforms,
+  - surrounded by a frame on coloured platforms.
+
+#### Mute<!-- linebreak -->
+
+When **Mute** is set to **Yes**, the transceiver won't emit any sound. Also, the radio mode will be displayed as ~~DMR~~, ~~FM~~, ~~FMN~~ or ~~[DW]~~.  
+Mute can be toggled by long pressing the **0** key.
 
 
 <div style="page-break-after: always; break-after: page;"></div>
 
-#### VFO Quick Menu<!-- linebreak -->
+### VFO Quick Menu<!-- linebreak -->
 
 - Pressing the **Orange** button on the top of the radio in VFO mode displays the Quick menu for the VFO screen. Currently, this has five options.
 
@@ -716,35 +750,35 @@ Of course, for this to work, the repeater locations must be set on the relevant 
 
 - The Baofeng RD-5R does not have an **Orange** button. On this radio press and hold the orange coloured **MR/VFO** button to enter the Quick menu
 
-##### VFO selection A or B<!-- linebreak -->
+#### VFO selection A or B<!-- linebreak -->
 
 - Pressing the **Orange** button twice while in VFO mode quickly toggles between **VFO A** and **VFO B**.
 - On the Baofeng DM-1801 | DM-860, this function is controlled using the **A/B** button.
 - **Long Press** of the **Red** button also changes from VFO A to VFO B, or vice versa.
 
-##### Exchange the TX and RX frequencies<!-- linebreak -->
+#### Exchange the TX and RX frequencies<!-- linebreak -->
 
 This function essentially reverses the TX and RX frequencies.
 
 - Press **Green** key or **Orange** button to confirm.
 
-##### Copy the RX frequency to the TX frequency<!-- linebreak -->
+#### Copy the RX frequency to the TX frequency<!-- linebreak -->
 
 Copies the Rx frequency to the Tx frequency.
 
 - Press **Green** key or **Orange** button to confirm.
 
-##### Copy Tx frequency to the Rx frequency<!-- linebreak -->
+#### Copy Tx frequency to the Rx frequency<!-- linebreak -->
 
 Copies the Tx frequency to the Rx frequency.
 
 - Press **Green** key or **Orange** button to confirm.
 
-##### Filter (*DMR mode only*)<!-- linebreak -->
+#### Filters (VFO)<!-- linebreak -->
 
-This function is identical to the Filter described for Channel mode operation ([above](#filter))
+This function is identical to the Filter described for [Channel mode operation](#filters-channel).
 
-##### VFO to New Channel<!-- linebreak -->
+#### VFO to New Channel<!-- linebreak -->
 
 The **VFO --> New Chan** option, creates a new channel using the current VFO settings.
 
@@ -752,7 +786,7 @@ The name of the new channel uses the format "**New channel** *NNN*", where *NNN*
 
 The Channel will also be added to the currently active Zone in the Channel screen. If the Channel screen is set to the *All Channels* zone, the channel will be added to that zone.
 
-##### Tone Scan for CTCSS or DCS tone in FM<!-- linebreak -->
+#### Tone Scan for CTCSS or DCS tone in FM<!-- linebreak -->
 
 This scans for any **CTCSS** or **DCS** tones, and sets the VFO to these parameters.
 
@@ -763,6 +797,14 @@ The default is to scan **All** tones (CTCSS and DCS). To scan for CTCSS or DCS o
 Canceling the scan restores the Rx CTCSS / DCS to its value prior to the scan being started.
 
 If a tone is detected; both the Rx and Tx CTCSS / DCS values are set to the tone which was detected by the scan.
+
+#### Dual Watch<!-- linebreak -->
+
+See the [VFO Dual Watch](#vfo-dual-watch) section.
+
+#### Freq Bind<!-- linebreak -->
+
+When this option is turned on, the receiving and transmitting shift value is preserved.
 
 
 <div style="page-break-after: always; break-after: page;"></div>
@@ -967,6 +1009,7 @@ The firmware can transmit FM Automatic Packet Reporting System data (APRS), as a
 See [https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System](https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System)
 
 To transmit APRS, at least one APRS configuration must be defined using the CPS, and the current channel or VFO must have an APRS configuration selected in its APRS setting. (See channel details APRS settings)
+
 Also the operator's callsign must be entered into the CPS, and the radio location must be valid, either by manual entry of the location, or by using the GPS in the radio, if fitted.
 
 
@@ -983,12 +1026,21 @@ If the location data is not valid in **Manual** or **PTT** beaconing modes, the 
 
 The CPS allows up to 8 APRS configurations to be defined. With multiple parameters including specifying the Icon to be displayed on sites like https://aprs.fi and also the Comment text.
 
+If the APRS configuration (in CPS) has a TX Frequency defined, the transceiver will transmit the APRS beacon on that frequency (**Please note** that this is not enabled while in Satellite mode). Also, this has no effect when **PTT** APRS mode is selected.
+
+If the TX frequency is not defined, the APRS beacon will be transmitted on the current Channel/VFO frequency (in analogue mode only, see the **Notes** below for digital case).
+
+It the APRS configuration (in CPS) has the **Transmit QSY** ticked, a QSY information is added to the beacon (the format is *"FFF.FFFMHz Toff +000"*).
+A receiving station of this information can change frequency, or QSY, over to the reported voice frequency to begin voice communication.
 
 
 *Notes:*
 
+- A digital channel/VFO could have an APRS configuration defined, but the TX frequency of that APRS configuration **must** be set.
+- When a channel has an APRS configuration set, a **"a"** letter is displayed next to the current mode (FM/FMN/DMR), in the header of the Channel and VFO screens.
+  - when the beaconing is enabled, the font used for this marker is in bold,
+  - when it's disabled, it uses the regular font.
 - Currently only APRS Tx is supported. It is currently unknown whether the hardware in any of the supported radios can be used to receive APRS or other AX25 packet transmissions.
-- Voice communication is not possible on a channel or VFO which has an APRS configuation selected.
 - The APRS packet data format only allows for up to 6 character callsigns. This is a limitation of the specification not the firmware.
 - Satellites have specific APRS parameters which need to be used, so default APRS parameters are defined in the satellites data uploaded from the CPS. To override these parameters, define an APRS config with the same name as the satellite, and set the appropriate custom parameters you wish to use with that satellite
 - Most VHF and UHF APRS systems use 1200 baud
@@ -1063,7 +1115,7 @@ Monitor mode (long press on **SK2**) suspends the scan and open the receiver to 
 
 #### VFO Dual Watch<!-- linebreak -->
 
-In the VFO Quick Menu, select Dual Watch
+In the VFO Quick Menu, select [Dual Watch](#dual-watch)
 
 In this mode, the radio will scan the VFO A and VFO B frequencies.
 In this mode rather than displaying the Rx and Tx frequency of an individual VFO, the Rx frequency of VFO A and VFO B is displayed.
@@ -1135,7 +1187,7 @@ Both the Channel and VFO screens support scanning, but their operation is slight
 
 - Press and hold (**Long press**) the **Up** arrow to start scanning the channels in the zone. On the MD-9600 press and hold the **Up** arrow on the front panel of the radio.
 - Press the **Left** arrow to reverse the direction of scan. Press the **Down** arrow on a MD-UV380 | RT-3S, or the one on the front panel for a MD-9600 | RT-90 (or **C** mic button), to reverse the scan direction.
-- Press the **Right** arrow to mark the channel as a *nuisance* channel which will be removed from the current scan (or **B** on the microphone for a MD-9600 | RT-90). Press the **Star key** on a MD-UV380 | RT-3S.
+- Press the **Right** arrow to mark the channel as a *nuisance* channel which will be removed from the current scan (or **B** on the microphone for a MD-9600 | RT-90). Press the **Star** key on a MD-UV380 | RT-3S.
 - Press the **Up** arrow to skip over the current channel, and continue the scan. On the MD-9600 rotate clockwise the rotary knob on the front panel of the radio, or the **Up** arrow on the mic.
 
 Pressing any other button stops the scan.
@@ -1160,7 +1212,7 @@ When not actively scanning, pressing the **Up** or **Down** arrows performs the 
 
 - Press the **Left** arrow key to reverse the scan direction. Press the **Down** arrow on a MD-UV380 | RT-3S, or the one on the front panel for a MD-9600 | RT-90 (or **C** mic button), to reverse the scan direction.
 - Press the **Up** arrow to skip over the current frequency and continue the scan. On the MD-9600 rotate clockwise the rotary knob on the front panel of the radio, or the **Up** arrow on the mic.
-- Press the **Right** arrow to mark the current frequency as a *nuisance* frequency, which will be omitted by the scan (or **B** on the microphone for a MD-9600 | RT-90). Press the **Star key** on a MD-UV380 | RT-3S.
+- Press the **Right** arrow to mark the current frequency as a *nuisance* frequency, which will be omitted by the scan (or **B** on the microphone for a MD-9600 | RT-90). Press the **Star** key on a MD-UV380 | RT-3S.
 
 Pressing any other button will stop the scan
 
@@ -1210,6 +1262,10 @@ The keypad entry follows the same functionality as stock GD77 firmware.
 ![MD-9600 cheatsheet](media/MD9600-CheatSheet.png)<!-- { width=600 } -->
 
 ![MD-UV380 cheatsheet](media/MD-UV380-CheatSheet.png)<!-- { width=600 } -->
+
+![DM-1701 cheatsheet](media/DM-1701-CheatSheet.svg)<!-- { width=600 } -->
+
+![MD-2017 cheatsheet](media/MD-2017-CheatSheet.svg)<!-- { width=600 } -->
 
 
 <div style="page-break-after: always; break-after: page;"></div>
@@ -1339,7 +1395,6 @@ If using Local time. **You MUST set the Timezone before setting the time**
 
 - The clock only keeps time when the radio is turned on, or in Suspend Mode.
 - The time accuracy varies from radio to radio, but can be accurate to approximately 5 second per day.
-- Problems with time accuracy can be partially corrected by using the Time Cal: setting in the Options menu
 
 &rarr; Press the **Down** key to display the next page.
 
@@ -1360,8 +1415,7 @@ This displays and allows the entry of the location in Latitude / Longitude
 
 ![location](media/radioinfo-location.png)
 
-This screen is currently only used for the Satellite functionality.
-But may be used in the future to send APRS data.
+This screen is used for the Satellite functionality and to send APRS data.
 
 Enter the full Latitude / Longitude in DD.DDD DDD.DDD format (D degrees)
 
@@ -1394,7 +1448,11 @@ This shows the history of battery voltage on an hourly basis.
 
 #### DMR Contacts<!-- linebreak -->
 
-Allows selection, Editing or Deletion of DMR Contacts
+Allows selection, Editing or Deletion of DMR Contacts.
+
+*Note*:
+
+- Press the **Hash** (**#**) key to switch between Group Call / Private Call / All Call lists.
 
 #### FM DTMF Contacts<!-- linebreak -->
 
@@ -1501,13 +1559,6 @@ The range is +/- 0.5V.
 - The battery voltage measurement is taken by the CPU from the internal battery voltage rail, and can differ from the value measured on the external charging terminals of the battery, especially when the radio is transmitting.
 - Changing this calibration will affect both the voltage and percentage display.
 
-##### Time Cal<!-- linebreak -->
-
-This setting allows some calibration of the time clock which is maintained while the radio is turned on.
-The range is +/- 7, the units are x / 10000, so a value of 1 results in a change of 1 second in 10,000 seconds.
-
-The clock is currently an experimental feature and is not guaranteed to be accurate.
-
 ##### Eco Level<!-- linebreak -->
 
 This setting controls the Economy or Rx Power Saving, operation of the radio.
@@ -1557,7 +1608,7 @@ If suspend mode is not enabled, holding **SK2** while the power / volume control
 
 ##### Safe Power On<!-- linebreak -->
 
-This setting requires SK1 to be pressed when powering up the transceiver, preventing unwanted power-ups, such as when the radio is in a backpack, which can drain the battery. This parameter is also operational when suspend mode is enabled.
+This setting requires **SK1** to be pressed when powering up the transceiver, preventing unwanted power-ups, such as when the radio is in a backpack, which can drain the battery. This parameter is also operational when suspend mode is enabled.
 
 *Note:*
 
@@ -1565,25 +1616,25 @@ This setting requires SK1 to be pressed when powering up the transceiver, preven
 
 **This setting is not available on the MD-9600 | RT-90.**
 
-##### Auto Power Off<!-- linebreak -->
+##### APO (Auto Power Off)<!-- linebreak -->
 
-This setting (*APO*) enables the transceiver to switch off, if the radio is not used in the selected amount of time (30, 60, 90, 120 and 180 minutes); i.e. No keys or buttons, including PTT no keys are pressed.
+This setting enables the transceiver to switch off, if the radio is not used in the selected amount of time; i.e. No keys or buttons, including PTT no keys are pressed.
 
-One minute before the transceiver switches off, an "**Auto Pwr-Off**" message is displayed and notification beep tones are played.
+One minute before the transceiver switches off, an "**APO**" message is displayed and notification beep tones are played.
 
 *Notes:*
 
- - The **Auto Pwr-Off** function does not work:
+ - The **APO** function does not work:
    * if the transceiver is scanning.
    * if a Satellite alarm is set.
    * while in hotspot mode.
- - If **Auto Pwr-Off** function is enabled, the battery information (*percentage or voltage*) will be displayed in **bold font**.
+ - If **APO** function is enabled, the battery information (*percentage or voltage*) will be displayed in **bold font**.
  - If [**APO with RF**](#apo-with-rf) is enabled, the timer will also get reset if a valid signal is received.
  - Technically; the APO function uses the same low power functionality as Suspend mode, so the radio will continue to consume about 16mA when in Auto Power Off, we are currently trying to reduce this current, but because the firmware can't completely cut off power to all the radio hardware, it will never be possible to completely turn off the radio in the same way as the volume / power knob does.
 
 ##### APO with RF<!-- linebreak -->
 
-If [**Auto Pwr-Off**](#auto-power-off) is enabled, the *APO* timer will also be reset when receiving a valid signal.
+If [**APO**](#apo-auto-power-off) is enabled, the *APO* timer will also be reset when receiving a valid signal.
 
 ##### Sat (Satellite follow mode)<!-- linebreak -->
 
@@ -1602,9 +1653,52 @@ Options are:
   - **Off**: turn off GPS module power (except on the TYT MD-9600 | Retevis RT-90 for technical reasons),
   - **On**: turn on GPS module power,
   - **NMEA**: the GPS module sends all NMEA data to the USB serial port of the radio.
+  - **Log**: logs the NMEA data to the external memory flash (see below).
+
+
+*Note*:
+
+- if the displayed value is '**None**', it means that the firmware could not detect a GPS module (as on radios that do not integrate this hardware option).
+
+
+**GPS Logging**:
+
+The log uses some spaces of the Flash memory, as a cyclic buffer.
+
+Every time logging is started, a marker is saved to the flash memory, and then the G\***RMC** lines are logged every second, and once per minute **all** NMEA lines are logged for one second.
+
+It doesn't log all NMEA lines all the time, because it consumes too much memory and normally it's not important to record the other NMEA lines (*e.g.* the satellite RSSI data).
+
+The storage size depends of the Flash memory type:
+
+| **Flash Size** | **NMEA Storage** |
+| --- | --- |
+| 16Mb | 2Mb |
+| 2Mb *and* 8Mb | 1Mb |
+| 1Mb | 288kb *or* 832kb<sup>1</sup> |
+
+When the CPS reads the NMEA data from the radio it reads the whole storage space and searches for the **Start** and **End** markers for each individual log entries, and saves each log as a separate file.
+
+The exported files can be used on various softwares like:
+
+  - <https://www.opengd77.com/downloads/mapviewer/>
+  - <https://www.gpsvisualizer.com/>
+
+
+<sup>1</sup>: For the GPS logging storage space, on the 1Mb devices (like the GD-77), part or the totality of the DMR Id database space is used for the logging storage.
+If the Voice Prompts are installed, only 288kb are used, otherwise all the 832kb are dedicated for this.
+**Enabling GPS Logging on such device deletes the DMR Id data**, hence if the operator wants that feature back, the DMR Id database needs to be **re-uploaded from the CPS** (and the GPS Log option has to be **turned off**).
+
 
 **WARNING: Setting the GPS to output NMEA data will prevent the CPS communicating with the radio, and the GPS setting should be set to "Off" or "On", when using the CPS.**
 
+##### Locked<!-- linebreak -->
+
+This setting allows to protect the channel configuration, making any permanent change impossible (in the non-volatile storage, see [Channel Details](#channel-details) and [Read the VFO into the current channel](#read-the-vfo-into-the-current-channel) sections).
+
+*Note:*
+
+- This has no impact on the VFOs, Contacts, etc.
 
 <div style="page-break-after: always; break-after: page;"></div>
 
@@ -1638,6 +1732,19 @@ The hardware band limits are:
 These limits are because the *AT1846S RF* chip **will not operate reliably** outside this range, and this range is actually beyond the published specification of the AT1846S, which is technically 134MHz - 174MHz, 200MHz - 260MHz, 400MHz - 520MHz.
 
 It should also be noted that the radio does **not** have a PA or Rx section for the 200MHz band, **so operating in this range has high spurious emissions, usually on the 1<sup>st</sup> harmonic of the frequency in use**.
+
+##### TX Inhibit<!-- linebreak -->
+
+You can inhibit the transmission to prevent unauthorized individuals from transmitting, or to eliminate accidental transmissions while carrying the transceiver.
+
+Options are:
+
+- ***OFF***: transmission is enabled.
+- ***ON***: transmission is disabled.
+
+*Note:*
+
+- When TX is inhibited; APRS beaconing, VOX triggering and Satellite transmissions are also disabled.
 
 ##### Filter time<!-- linebreak -->
 
@@ -1725,9 +1832,29 @@ A power meter is the only way to know what power output each individual radio wi
 This settings disables the DMR CRC checking, which could be helpful in some cases while listening some specific networks.
 
 
+##### Mode<!-- linebreak -->
+
+**This setting is only available on the TYT MD-UV380 (non Plus 10W).**
+
+If you have a MD-UV380 10W radio (non Plus version that requires a special firmware version), this option permits to display the power values using the 10W scale (50mw, 250mW, 500mW, 750mW, 1W, 2W, 3W, 5W and 10W) in the user interface.
+
+*Note:*
+
+- It has no impact of the effective power output, so turning this option to **On** on a 5W radio is meaningless.
+
+
 <div style="page-break-after: always; break-after: page;"></div>
 
 #### Display Options
+
+##### Text size<!-- linebreak -->
+
+**This setting is only available on coloured platforms.**
+
+When the selected size is equal to **1** (default), the fonts are used in their normal height.
+
+If the selected size is equal to **2**, some of the used fonts are displayed using double height.
+
 
 ##### Brightness<!-- linebreak -->
 
@@ -1760,6 +1887,7 @@ Controls the display backlight operation
 - **Auto** Display backlight will turn on automatically when triggered by various events *e.g.* Rx of signal, or pressing a key or button.
 - **Squelch** Display backlight remains illuminated while the FM squelch is open or there is a valid DMR signal, and also remains illuminated for the specified backlight timeout after the squelch has closed. The minimum timeout period in this mode is 5 seconds.
 - **Manual** Display backlight is toggled on and off by pressing the **Black** button (**SK1**).
+- **Buttons** Display backlight will illuminate for the specified backlight timeout on every button press event.
 - **None** Display backlight will not illuminate under any condition.
 
 ##### Timeout<!-- linebreak -->
@@ -1818,6 +1946,17 @@ Options are:
 
 The default is **1 Line**.
 
+##### Time (in header)<!-- linebreak -->
+
+**This setting is only available on coloured platforms and the MD-9600.**
+
+When this setting is enabled, the time (*hh:mm* format) is displayed on the right of the header bar, instead of the battery level.
+It's still possible to temporary display the battery level by pressing the **SK1** button.
+
+*Note:*
+
+- When the battery level reaches its critical level, the battery level is displayed, regardless of this setting.
+
 ##### Battery (units)<!-- linebreak -->
 
 Controls whether the battery is show as a percentage or as voltage.
@@ -1834,7 +1973,7 @@ Options are:
 
 ##### Info<!-- linebreak -->
 
-This setting controls whether the radio displays additional information on the VFO of Channel screen, by making the DMR Timeslot, or the Power level text bold, or both bold.
+This setting controls whether the radio displays additional information on the VFO or Channel screen, by making the DMR Timeslot, or the Power level text bold, or both bold.
 
 If TS or Both setting is selected, the TS value will be shown in bold if an override is applied to the TS, from a Contact TS override.
 If Pwr or Both setting is selected the power value will be shown in bold if a channel specific power override is being applied to the normal power setting.
@@ -1863,14 +2002,14 @@ Press the **Left** arrow to increase the value in steps of 1 hour.
 
 If your timezone is not on a 1-hour boundary, press **SK2** and **Right** or **Left** to adjust the timezone in 15 minute increments.
 
-##### Time (display format)<!-- linebreak -->
+##### UTC/Local Time (display format)<!-- linebreak -->
 
 This setting controls whether the value of time and date that is entered and displayed is "UTC" or "Local"
 
-When this is set to Local, it uses the value set in Radio Information Timezone to calculate the date and time for the clock date and satellite passes
+When this is set to **No**, it uses the value set in Radio Information Timezone to calculate the date and time for the clock date and satellite passes
 
-If "UTC" is selected, all dates and times displayed will have UTC after the value to indicate that UTC is being used.
-If "Local" is selected, dates and times do not show any text to indicate that Local time is use
+If **Yes** is selected, all dates and times displayed will have UTC after the value to indicate that UTC is being used.
+If **No** is selected, dates and times do not show any text to indicate that Local time is use.
 
 ##### Show dist(ance)<!-- linebreak -->
 
@@ -1879,6 +2018,10 @@ This setting enables the display of the distance to repeater (in kilometers) to 
 To have it working, Channel's location has to be set (using the CPS), and the transceiver location has to be valid (Radio Info's [Location screen](#location-screen) or GPS).
 
 If both locations aren't set or valid, **"--- km"** will be displayed instead.
+
+##### Last talker<!-- linebreak -->
+
+This option allows you to display alternately, in digital mode, the channel contact, and the last station received. The display time of each contact can range from 1 to 30 seconds.
 
 <div style="page-break-after: always; break-after: page;"></div>
 
@@ -1948,13 +2091,17 @@ This controls the audio gain of the FM microphone input system, **relative to th
 
 The units of this control in the baseband IC (*AT1846S*) **are not known**.
 
-##### VOX threshold<!-- linebreak -->
+##### VOX Threshold<!-- linebreak -->
 
 Threshold value which controls the mic level which **triggers** the radio to transmit when VOX is enabled.
 
 ##### VOX Tail<!-- linebreak -->
 
 Controls the length of time **after** the operator stops speaking, before the transmission is ended.
+
+*Note:*
+
+- the VOX Tail zero value is available for special use cases, like voice modem software. It's not intended to be used with human voice.
 
 ##### Prompt<!-- linebreak -->
 
@@ -2161,6 +2308,15 @@ Modes are:
 *Note*: When in the Channel or VFO screen, the APRS beaconing could be temporary toggled **On** or **Off**, using the **SK1** + **1** key. 
 
 
+#### Beaconing Ch Power<!-- linebreak -->
+
+Controls the custom power assigned to the APRS beaconing.
+
+See also the section about [controlling the Tx power](#controlling-tx-power).
+
+**By default**, the APRS beaconing will use the **Master** power setting, and this option allows a **custom** power setting to be set instead.
+
+
 ##### Beaconing Location<!-- linebreak -->
 
 This setting permits to choose the location source used to report your position.
@@ -2335,6 +2491,40 @@ The supported values are:
 
 *FM* or *DMR*.
 
+#### Location<!-- linebreak -->
+
+Enables or disables the use of channel coordinates in the [Roaming](#roaming) function.  
+This also gives access to a notification that displays the orientation and distance to this repeater, by long pressing the **8** key.  
+See [Lat](#lat) and [Lon](#lon) settings to define the coordinates.
+
+#### Lat<!-- linebreak -->
+
+Sets the Latitude coordinate of the channel.
+
+- To change the southern / northern hemisphere, press **Down** / **Up**.
+- Enter the numerical value, in degrees (DD.DDDD format).
+- Press **Left** button to delete the latest entered digit.
+
+*Note:*
+
+- You must change the southern / northern before entering the latest digit(s).
+- You can press **Green** button at any time, the remaining digits will be set to '0' (zero).
+- When the GPS has a fix, long pressing the **Star** key, when **NOT** entering the coordinate, updates the channel location coordinates to the current position.
+
+#### Lon<!-- linebreak -->
+
+Sets the Longitude coordinate of the channel.
+
+- To change the western / eastern hemisphere, press **Down** / **Up**.
+- Enter the numerical value, in degrees (DDD.DDDD format).
+- Press **Left** button to delete the latest entered digit.
+
+*Note:*
+
+- You must change the western / eastern before entering the latest digit(s).
+- You can press **Green** button at any time, the remaining digits will be set to '0' (zero).
+- When the GPS has a fix, long pressing the **Star** key, when **NOT** entering the coordinate, updates the channel location coordinates to the current position.
+
 #### DMR ID<!-- linebreak -->
 
 If the channel mode is DMR, a channel specific DMR ID number can be entered via the keypad.
@@ -2409,7 +2599,7 @@ Controls whether VOX (Voice Operated Switch) is enabled or disabled.
 
 Controls the custom / individual power assigned to the channel.
 
-See also the section in about controlling power.
+See also the section about [controlling the Tx power](#controlling-tx-power).
 
 **By default**, all channels will use the **Master** power setting, and this option allows a **custom** power setting to be set on a channel, or for the channel set to use the **Master** power setting.
 
@@ -2417,7 +2607,7 @@ See also the section in about controlling power.
 
 Controls the custom / individual squelch assigned to the channel.
 
-See also the section in about controlling power.
+See also the section about [controlling the Tx power](#controlling-tx-power).
 
 **By default**, all channels will use the **Master** squelch setting. This is the squelch value defined in the Options squelch setting for the band of the channel.
 A **custom** squelch setting can be applied to the channel by pressing the right and left arrow keys. Custom squelch settings are in 5% steps.
@@ -2446,7 +2636,7 @@ Options are:
 *Notes:*
 
 - Talker Alias reception is always operational. Do not enable this feature because you are not receiving TA data, as it does not control TA Rx.
-- Use of this feature **will cause problems on Motorola based repeaters and networks**, and should only be used for simplex and possibly on *Brandmeister* and other networks which correctly support Talker Alias. -->
+- Use of this feature **will cause problems on Motorola based repeaters and networks**, and should only be used for simplex and possibly on *Brandmeister* and other networks which correctly support Talker Alias.
 
 
 #### APRS (channel)<!-- linebreak -->
@@ -2454,6 +2644,11 @@ Options are:
 Sets the FM APRS Tx configation to be used on this VFO / Channel
 
 The default setting is None
+
+
+#### Force DMO<!-- linebreak -->
+
+This sets a channel to operate in simplex / DMO even when the Tx and Rx frequencies are different.
 
 
 #### Accepting and saving the changes to the channel<!-- linebreak -->
@@ -2903,19 +3098,25 @@ The LED on the top of the radio also turns red to indicate the radio is transmit
 
 <div style="page-break-after: always; break-after: page;"></div>
 
-## Resetting the Settings
+## Boot key combinations
 
-The radio can also be set to the default settings by holding the **SK2** key (**P3** on the MD-9600 | RT-90) while turning on the radio.
+The following lists the available functions when holding down the key combinations when powering on the tranceiver:
 
-Additionally, holding the:
+|   **Function**                                    |      **GD77S**         |    **Other MK22 <br>based HTs**    |    **STM32 <br>based HTs**    |         **MD-9600**           |
+| :---                                              |        :---:           |             :---:              |           :---:           |            :---:              |
+| Settings reset                                    |       **SK2**          |            **SK2**             |          **SK2**          |            **P3**             |
+| Clear boot melody/image and themes *(see Note 1)* | **SK2** + **Orange**   |  **SK2** + **Up** + **Down**   |     **SK2** + **Down**    | **P3** + **Front Panel Down** |
+| Safe Boot                                         |     *unavailable*      |         **SK1** + **0**        |      **SK1** + **0**      |         **P3** + **0**        |
+| Enable Voice Prompt L3                            |     *unavailable*      |             **#**              |           **#**           |             **#**             |
+| Booting when [Safe Pwr-On](#safe-power-on) is On  |     *unavailable*      |            **SK1**             |          **SK1**          |         *unavailable*         |
+| Clearing NMEA logs                                |     *unavailable*      | **SK1** + **5** *(see Note 2)* |       **SK1** + **5**     |  **Front Panel Down** + **5** |
+| Band limits (On/Off toggle)                       |   **SK1** + **PTT**    |         *unavailable*          |        *unavailable*      |         *unavailable*         |
+| Hotspot (MMDVM/BlueDV toggle)                     |        **SK1**         |         *unavailable*          |        *unavailable*      |         *unavailable*         |
 
-- **SK2** button as well as the **Up** and **Down** arrow keys on the GD-77 | DM-1801 | DM-1801A | RD-5R,
-- **SK2** button as well as the **Down** arrow key on the MD-UV380 | RT-3S | DM-1701 | RT-84 | MD-2017 | RT-82,
-- **P3** button as well as the **Down** front panel arrow key on the MD-9600 | RT-90,
+*Notes:*
 
-resets **any** custom boot melody, custom boot image and themes on colours platforms, that has been uploaded using the OpenGD77 CPS.
-
-On the GD-77S, which does not have a keypad, holding **SK2** and **Orange** resets **any** custom boot melody.
+1. Resets themes on colours platforms.
+2. NMEA log clearing is optional on MK22 platforms, as it needs the installation of a special firmware build which enables NMEA logging.
 
 
 <div style="page-break-after: always; break-after: page;"></div>
@@ -2942,7 +3143,7 @@ In each mode, buttons **SK1** and **SK2** perform a different function, the oper
 
 The **Control modes**, and the function of buttons **SK1** and **SK2** in each mode is as follows:
 
-### GD77S Channel / TG mode
+### GD77S Channel/TG mode
 
 This mode is announced as "**Channel mode**".
 In this mode, button **SK1** and **SK2** are used to cycle through the *Talkgroups* / *Contacts* assigned to the current channels
